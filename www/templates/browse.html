@@ -1,0 +1,15 @@
+<!DOCTYME HTML>
+
+<ion-view view-title="{{titulo}}">
+  <ion-content>
+    <h1>Ver {{titulo}}</h1>
+
+   <!-- <video controls="controls" name="Video Name" src="{{videoUrl | trustUrl}}"></video> -->
+    <div id="contenedor-video">
+    <video id="example_video_1" controls width="100%" height="auto"  preload loop poster="http://172.16.10.3/playcenter/covers/{{titulo}}_1280.jpg">
+      <source type="video/mp4" ng-src="{{url | trusted}}">
+    </video>
+    </div>
+
+  </ion-content>
+</ion-view>
