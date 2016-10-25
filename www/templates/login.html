@@ -1,25 +1,41 @@
+
 <ion-modal-view>
-  <ion-header-bar>
-    <h1 class="title">Login</h1>
-    <div class="buttons">
-      <button class="button button-clear" ng-click="closeLogin()">Close</button>
-    </div>
-  </ion-header-bar>
-  <ion-content>
+
+
+ <ion-nav-buttons side="left"> <button class="button button-icon button-clear ion-drag custom-dark" menu-toggle="left"> </button> </ion-nav-buttons>
+
+
+
+
+  <ion-content id="backgroundLogin" padding="true">
+    <br><br>
+    <img id="gestsol">
+
+    <br><br>
+      <img id="playcenter">
+
+    <br><br><br>
     <form ng-submit="doLogin()">
-      <div class="list">
-        <label class="item item-input">
+      <div class="list2">
+       <!-- <label class="item item-input">
           <span class="input-label">Username</span>
-          <input type="text" ng-model="loginData.username">
-        </label>
+          <input type="password" ng-model="loginData.username">
+        </label>-->
         <label class="item item-input">
-          <span class="input-label">Password</span>
-          <input type="password" ng-model="loginData.password">
+          <span class="input-label"></span>
+          <input class="input" type="text"  placeholder="CÓDIGO" ng-model="loginData.password">
         </label>
-        <label class="item">
-          <button class="button button-block button-positive" type="submit">Log in</button>
-        </label>
+
+          <button ng-click="login()" style="background-color:#A68A4B; color: white; font-family: montserrat-hairline; height: 0.5px" class="button button-block" type="submit">INGRESAR</button>
+        <div id="reg">Regístrate</div>
       </div>
+      <br><br><br><br><br><br><br><br>
     </form>
+      <div class="center" id="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tristique at ante et condimentum. Mauris non sem viverra lectus condimentum mattis eget quis dui. Curabitur eget sapien ac elit feugiat finibus. Praesent dapibus leo sem. Praesent tincidunt sit amet dolor et viverra. Nulla sit amet commodo urna. Vivamus eget augue sed lorem blandit porttitor. Integer ac massa enim. Vestibu- lum quis dignissim nisl.</div>
+
+    </div>
+
+<div id="footer">Gestsol S.A. 2016 todos los derechos reservados</div>
   </ion-content>
+
 </ion-modal-view>

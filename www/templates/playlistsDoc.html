@@ -1,14 +1,30 @@
-<ion-view view-title="Documentales">
-    <ion-nav-back-button> </ion-nav-back-button> <ion-nav-buttons side="left"> <button class="button button-icon button-clear ion-navicon" menu-toggle="left"> </button> </ion-nav-buttons>
+<ion-view>
+    <ion-nav-back-button> </ion-nav-back-button> <ion-nav-buttons side="left"> <button class="button button-icon button-clear ion-drag custom-dark" menu-toggle="left"> </button> </ion-nav-buttons>
     <ion-nav-bar class="bar-dark">
-    <ion-content class="padding">
-        <ion-item class="item-text-wrap" ng-repeat="doc in docs" href="#/app/playlistsMovie/{{doc.titulo}}">
-            <div id="over" style="position: absolute; width: 100%; height: auto">
-            <img src="http://172.16.10.3/playcenter/covers/{{doc.titulo}}_300.jpg" alt="movies" align="right" height="100" width="auto">
-            </div>
-                <h2>{{doc.titulo}}</h2>
-            <p>{{doc.descripcion}}</p>
-        </ion-item>
+        <ion-content class="backgroundApp" scroll="true">
 
-    </ion-content>
+            <br>
+            <ul ng-repeat="doc in docs" ng-if="$even">
+                <div class="film_ini">
+                    <a href="#/app/playlistsMovie/{{docs[$index].titulo}}">
+                        <img ng-src="http://172.16.10.3/playcenter/covers/{{docs[$index].titulo}}_300.jpg"
+                             border=0 alt="" width="100%" height="auto"></a>
+                </div>
+                <div class="tit_ini">
+                    <a4>{{docs[$index].titulo}}</a4>
+                </div>
+
+                <div class="film_fin">
+                    <a href="#/app/playlistsMovie/{{docs[$index+1].titulo}}">
+                        <img ng-src="http://172.16.10.3/playcenter/covers/{{docs[$index+1].titulo}}_300.jpg"
+                             border=0 alt="" width="100%" height="auto"></a>
+                </div>
+                <div class="tit_fin">
+                    <a4>{{docs[$index+1].titulo}}</a4>
+                </div>
+
+            </ul>
+
+
+        </ion-content>
 </ion-view>

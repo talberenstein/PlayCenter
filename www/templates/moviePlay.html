@@ -1,0 +1,25 @@
+<!DOCTYME HTML>
+
+<ion-view hide-nav-bar="true">
+    <ion-content class="backgroundApp" scroll="true">
+        <!-- <h1>Ver {{titulo}}</h1>-->
+        <br>
+
+        <!-- <video controls="controls" name="Video Name" src="{{videoUrl | trustUrl}}"></video> -->
+        <div id="contenedor-video">
+            <video id="example_video_1" controls="video-controls"
+                   autoplay width="100%" height="auto"  preload loop poster="http://172.16.10.3/playcenter/covers/{{titulo}}_1280.jpg">
+                <source type="video/mp4" ng-src="{{url | trusted}}">
+            </video>
+        </div>
+
+        <div id="desc_browse">
+            <a>{{movie}}</a>
+            <br><br>
+
+        </div>
+
+
+
+    </ion-content>
+</ion-view>

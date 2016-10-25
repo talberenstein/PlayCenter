@@ -1,78 +1,84 @@
-<ion-side-menus enable-menu-with-back-views="false">
+<ion-side-menus>
   <ion-side-menu-content>
     <ion-nav-bar class="bar-stable">
       <ion-nav-back-button>
       </ion-nav-back-button>
 
       <ion-nav-buttons side="left">
-        <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+        <button class="button button-icon button-clear ion-drag" menu-toggle="left">
         </button>
       </ion-nav-buttons>
     </ion-nav-bar>
     <ion-nav-view name="menuContent"></ion-nav-view>
   </ion-side-menu-content>
 
-  <ion-side-menu side="left">
+  <ion-side-menu side="left" class="my-side-menu">
     <ion-header-bar class="bar-dark">
-      <h1 class="title">PlayCenter</h1>
+      <h1 class="title">BIENVENIDO</h1>
     </ion-header-bar>
     <ion-content>
+
       <ion-list>
-        <ion-item menu-close ng-click="login()">
-          <i class="icon ion-person"></i>
-          Login
-        </ion-item>
-        <ion-item menu-close href="#/app/search">
-          Search
-        </ion-item>
-        <ion-item menu-close href="#/app/playlistsMovie">
-          <i class="icon ion-android-film"></i>
-         Todas las Películas
-        </ion-item>
-        <ion-item menu-close href="#/app/playlistsNew">
-          <i class="icon ion-ios-star"></i>
-          Novedades
-        </ion-item>
-        <ion-item menu-close href="#/app/playlistsTrailer">
-          <i class="icon ion-ios-videocam"></i>
-          Trailers
-        </ion-item>
-        <ion-item menu-close href="#/app/playlistsAction">
-          <i class="icon ion-lock-combination"></i>
-          Acción
-        </ion-item>
-        <ion-item menu-close href="#/app/playlistsCf">
-          <i class="icon ion-planet"></i>
-          Ciencia Ficción
-        </ion-item>
-        <ion-item menu-close href="#/app/playlistsSerial">
-          <i class="icon ion-beaker"></i>
-          Series
-        </ion-item>
-        <ion-item menu-close href="#/app/playlistsDoc">
-          <i class="icon ion-videocamera"></i>
+
+        <li class="item my-list-item" menu-close><a2 href="#/app/inicio">
+          <i class="icon ion-film"></i>
+          <ion-icon name="explora"></ion-icon>
+          <img id="esp6">
+          Ingresar
+        </a2>
+        </li>
+
+        <li class="item my-list-item" menu-close><a href="#/app/playlistsExplora">
+          <i class="icon ion-explora"></i>
+          <ion-icon name="explora"></ion-icon>
+            <img id="esp6">
+          Explora
+        </a>
+        </li>
+
+
+        <li class="item my-list-item" menu-close><a href="#/app/playlistsMovie">
+          <i class="icon ion-film"></i>
+          <ion-icon name="film"></ion-icon>
+            <img id="esp6">
+          Películas
+        </a>
+        </li>
+
+        <li class="item my-list-item" menu-close><a href="#/app/playlistsDoc">
+          <i class="icon ion-documentales"></i>
+          <ion-icon name="documentales"></ion-icon>
+            <img id="esp6">
           Documentales
-        </ion-item>
-        <ion-item menu-close href="#/app/playlistsShort">
-          <i class="icon ion-ribbon-b"></i>
+        </a>
+        </li>
+
+        <li class="item my-list-item" menu-close><a href="#/app/playlistsShort">
+          <i class="icon ion-cortos"></i>
+          <ion-icon name="cortos"></ion-icon>
+            <img id="esp6">
           Cortos
-        </ion-item>
-        <ion-item menu-close href="#/app/playlistsMusic">
-          <i class="icon ion-play"></i>
-          Música
-        </ion-item>
-        <ion-item menu-close href="#/app/playlistsBook">
-          <i class="icon ion-clipboard"></i>
-          Libros
-        </ion-item>
-        <ion-item menu-close href="#/app/playlistsSoccer">
-          <i class="icon ion-ios-football"></i>
-          Fútbol
-        </ion-item>
-        <ion-item menu-close href="#/app/playlistsKid">
-          <i class="icon ion-social-octocat"></i>
-          Kids
-        </ion-item>
+        </a>
+        </li>
+
+
+        <li class="item my-list-item" menu-close><a href="#/app/playlistsKid">
+          <i class="icon ion-kids"></i>
+          <ion-icon name="Infantil"></ion-icon>
+            <img id="esp6">
+          Infantil
+        </a>
+        </li>
+
+        <li class="item my-list-item" menu-close><a href="#/app/playlistsLibrary">
+          <i class="icon ion-biblioteca"></i>
+          <ion-icon name="biblioteca"></ion-icon>
+            <img id="esp6">
+          Mi biblioteca
+        </a>
+        </li>
+
+
       </ion-list>
     </ion-content>
   </ion-side-menu>

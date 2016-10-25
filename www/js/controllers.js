@@ -13,6 +13,7 @@ angular.module('starter.controllers', [])
 
         // Create the login modal that we will use later
         $ionicModal.fromTemplateUrl('templates/login.html', {
+
             scope: $scope
         }).then(function (modal) {
             $scope.modal = modal;
@@ -31,6 +32,8 @@ angular.module('starter.controllers', [])
         // Perform the login action when the user submits the login form
         $scope.doLogin = function () {
             console.log('Doing login', $scope.loginData);
+            StatusBar.hide();
+
 
             // Simulate a login delay. Remove this and replace with your login
             // code if using a login system
@@ -39,6 +42,7 @@ angular.module('starter.controllers', [])
             }, 1000);
         };
     })
+
 
     .controller('servicioMovieCtrl', function ($scope, $http) {
         $http.get("http://172.16.10.3/playcenter/mediacenter/classes/media.php?op=peliculasold"
@@ -100,7 +104,7 @@ angular.module('starter.controllers', [])
 
     })
 
-    .controller('servicioCfCtrl', function ($scope, $http) {
+    .controller('servicioLibraryCtrl', function ($scope, $http) {
         $http.get("http://172.16.10.3/playcenter/mediacenter/classes/media.php?op=cienciaficcion"
             , {cache: true})
             .then(function (response) {
@@ -148,7 +152,7 @@ angular.module('starter.controllers', [])
 
     })
 
-    .controller('servicioBookCtrl', function ($scope, $http) {
+    .controller('servicioExploraCtrl', function ($scope, $http) {
         $http.get("http://172.16.10.3/playcenter/mediacenter/classes/media.php?op=libros"
             , {cache: true})
             .then(function (response) {
@@ -186,14 +190,47 @@ angular.module('starter.controllers', [])
     })
 
 
+    .controller('LoginCtrl', function($scope){
+        $scope.data = {};
+
+        $scope.login = function(){
+            console.log("LOG COD: " + $scope.data.password);
+        }
+    })  
+
+
+
+
+
     .controller('PlaylistCtrl', function ($scope, $stateParams) {
         //console.log($stateParams.playlistTitulo);
         $scope.titulo = $stateParams.playlistTitulo;
+        $scope.descripcion = $stateParams.playlistDescripcion;
+        console.log($scope.descripcion);
         console.log($scope.titulo);
-        $scope.url = encodeURI("http://172.16.10.3/playcenter/media/" + $scope.titulo + ".mp4");
+        $scope.url = encodeURI("http://172.16.10.3/playcenter/media/" + $scope.titulo + "_trailer.mp4");
         console.log($scope.url);
+        $scope.goVideo = function(){
+            location.url('#/app/playlistsMovie/playMovie/' + $scope.titulo);
+        };
 
     })
+
+    .controller('PlayMovie', function ($scope, $stateParams) {
+        //console.log($stateParams.playlistTitulo);
+        $scope.movie = $stateParams.movie;
+        //$scope.descripcion = $stateParams.playlistDescripcion;
+        //console.log($scope.descripcion);
+        console.log($scope.titulo);
+        $scope.url = encodeURI("http://172.16.10.3/playcenter/media/" + $scope.movie + ".mp4");
+        console.log($scope.url);
+        $scope.goVideo = function(){
+            location.url('#/app/playlistsMovie/playMovie/{{titulo}}');
+        };
+
+    })
+
+
 
     .filter('trusted', ['$sce', function ($sce) {
         return function (url) {

@@ -1,15 +1,53 @@
-<ion-view view-title="Todas las Películas">
-    <ion-nav-back-button> </ion-nav-back-button> <ion-nav-buttons side="left"> <button class="button button-icon button-clear ion-navicon" menu-toggle="left"> </button> </ion-nav-buttons>
+<ion-view>
+    <ion-nav-back-button> </ion-nav-back-button> <ion-nav-buttons side="left"> <button class="button button-icon button-clear ion-drag custom-dark" menu-toggle="left"> </button> </ion-nav-buttons>
     <ion-nav-bar class="bar-dark">
-  <ion-content class="padding">
-    <ion-item class="item-text-wrap" ng-repeat="pelicula in peliculas" href="#/app/playlistsMovie/{{pelicula.titulo}}">
-     <div id="over" style="position: absolute; width: 100%; height: auto">
-        <img src="http://172.16.10.3/playcenter/covers/{{pelicula.titulo}}_300.jpg" alt="movies" align="right" height="100" width="auto">
-     </div>
-         <h2>{{pelicula.titulo}}<h2/>
+  <ion-content class="backgroundApp" class="padding">
 
-      <p>{{pelicula.descripcion}}</p>
-    </ion-item>
+<br>
+   <!--       <table>
+              <tr ng-repeat="pelicula in peliculas" ng-switch on="$index %3">
+                  <td ng-switch-when="0">
+                      <img class="esp7">
+                      <a href="#/app/playlistsMovie/{{peliculas[$index].titulo}}">
+                          <img ng-src="http://172.16.10.3/playcenter/covers/{{peliculas[$index].titulo}}_300.jpg" border=0 alt="" width="35%" height="auto"></a>
+                        <img id="esp6">
+                      <a href="#/app/playlistsMovie/{{peliculas[$index+1].titulo}}">
+                          <img ng-src="http://172.16.10.3/playcenter/covers/{{peliculas[$index+1].titulo}}_300.jpg" border=0 alt="" width="35%" height="auto"></a>
+                      <img class="esp7">
+                     <br>
+                      <a2>{{peliculas[$index].titulo}}</a2> <a2>{{peliculas[$index+1].titulo}} </a2>
+                  </td>
+                  <td ng-switch-when="0">
+        <span ng-show="items[$index+1]">
+          {{peliculas[$index+2].titulo}} {{peliculas[$index+3].titulo}}
+        </span>
+                  </td>
+
+              </tr>
+          </table> -->
+
+
+      <ul ng-repeat="pelicula in peliculas" ng-if="$even">
+          <div class="film_ini">
+              <a href="#/app/playlistsMovie/{{peliculas[$index].titulo}}">
+                  <img ng-src="http://172.16.10.3/playcenter/covers/{{peliculas[$index].titulo}}_300.jpg"
+                       border=0 alt="" width="100%" height="auto"></a>
+          </div>
+          <div class="tit_ini">
+              <a4>{{peliculas[$index].titulo}}</a4>
+          </div>
+
+          <div class="film_fin">
+              <a href="#/app/playlistsMovie/{{peliculas[$index+1].titulo}}">
+                  <img ng-src="http://172.16.10.3/playcenter/covers/{{peliculas[$index+1].titulo}}_300.jpg"
+                       border=0 alt="" width="100%" height="auto"></a>
+          </div>
+          <div class="tit_fin">
+              <a4>{{peliculas[$index+1].titulo}}</a4>
+          </div>
+
+      </ul>
+
 
   </ion-content>
 </ion-view>

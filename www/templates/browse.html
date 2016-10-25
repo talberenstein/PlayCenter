@@ -1,15 +1,44 @@
 <!DOCTYME HTML>
 
-<ion-view view-title="{{titulo}}">
-  <ion-content>
-    <h1>Ver {{titulo}}</h1>
+<ion-view hide-nav-bar="false" >
+    <ion-nav-back-button> </ion-nav-back-button> <ion-nav-buttons side="left"> <button class="button button-icon button-clear ion-drag custom-dark" menu-toggle="left"> </button> </ion-nav-buttons>
+    <ion-nav-bar class="bar-dark">
+  <ion-content class="backgroundApp" scroll="true">
+   <!-- <h1>Ver {{titulo}}</h1>-->
 
    <!-- <video controls="controls" name="Video Name" src="{{videoUrl | trustUrl}}"></video> -->
     <div id="contenedor-video">
-    <video id="example_video_1" controls width="100%" height="auto"  preload loop poster="http://172.16.10.3/playcenter/covers/{{titulo}}_1280.jpg">
+    <video id="example_video_1" controls="video-controls"
+           autoplay muted width="100%" height="auto"  preload loop poster="http://172.16.10.3/playcenter/covers/{{titulo}}_1280.jpg">
       <source type="video/mp4" ng-src="{{url | trusted}}">
     </video>
     </div>
+
+      <div id="sonido"><a4>Toca para activar sonido del Trailer</a4></div>
+
+      <div class="desc_browse">
+<a>{{titulo}}</a>
+          <br><br>
+          <a2>Esta es la descripción del video Batman es una pelicula asdfasdfasdfasdfasdf
+          asdfdsafdsañklf asdflkjdsafañl asdlkjfdsalñ</a2>
+
+      </div>
+
+      <div id="cover_browse">
+
+          <img ng-src="http://172.16.10.3/playcenter/covers/{{titulo}}_300.jpg" border=0 alt="" width="35%" height="auto">
+
+      </div>
+
+      <div id="boton_browse">
+          <a ng-href="#/app/playlistsMovie/playMovie/{{titulo}}" class="btn3"><a2>VER AHORA</a2></a>
+      </div>
+
+
+        <div id="cont"><a4>Continúa disfrutando sin conexión activando el botón off line.</a4></div>
+
+        <ion-toggle id="toggle1"> </ion-toggle>
+
 
   </ion-content>
 </ion-view>

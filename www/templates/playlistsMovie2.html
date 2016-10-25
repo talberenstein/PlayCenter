@@ -1,0 +1,15 @@
+<ion-view view-title="Todas las Películas">
+    <ion-nav-back-button> </ion-nav-back-button> <ion-nav-buttons side="left"> <button class="button button-icon button-clear ion-navicon" menu-toggle="left"> </button> </ion-nav-buttons>
+    <ion-nav-bar class="bar-dark">
+        <ion-content class="padding">
+            <ion-item class="item-text-wrap" ng-repeat="pelicula in peliculas" href="#/app/playlistsMovie/{{pelicula.titulo}}">
+                <div id="over" style="position: absolute; width: 100%; height: auto">
+                    <img src="http://172.16.10.3/playcenter/covers/{{pelicula.titulo}}_300.jpg" alt="movies" align="right" height="100" width="auto">
+                </div>
+                <h2>{{pelicula.titulo}}<h2/>
+
+                    <p>{{pelicula.descripcion}}</p>
+            </ion-item>
+
+        </ion-content>
+</ion-view>
