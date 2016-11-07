@@ -23,26 +23,6 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     })
 
 
-
-    .controller('DemoCtrl',function($scope, $ionicSlideBoxDelegate) {
-
-      $scope.images = [
-          "../img/pic1.jpg"
-      ]
-
-
-      $scope.slideVisible = function(index){
-        if(  index < $ionicSlideBoxDelegate.currentIndex() -1
-            || index > $ionicSlideBoxDelegate.currentIndex() + 1){
-          return false;
-        }
-
-        return true;
-      }
-
-
-    })
-
     .config(function($stateProvider, $urlRouterProvider) {
       $stateProvider
 
@@ -58,7 +38,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
             views: {
               'menuContent': {
                 templateUrl: 'templates/masvistas.html',
-                controller: 'DemoCtrl'
+                controller: 'servicioMasvistoCtrl'
               }
             }
           })

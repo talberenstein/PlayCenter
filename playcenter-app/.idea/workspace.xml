@@ -1,187 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f89f96a2-0150-4e0f-b3e2-a41de6c3453e" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/Common.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/Default.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/VideoController.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/angular-animate/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/angular-animate/angular-animate.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/angular-animate/angular-animate.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/angular-animate/angular-animate.min.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/angular-animate/bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/angular-animate/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/angular-sanitize.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/angular-sanitize/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/angular-sanitize/angular-sanitize.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/angular-sanitize/angular-sanitize.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/angular-sanitize/angular-sanitize.min.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/angular-sanitize/bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/angular-sanitize/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/angular-ui-router/CHANGELOG.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/angular-ui-router/CONTRIBUTING.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/angular-ui-router/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/angular-ui-router/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/angular-ui-router/api/angular-ui-router.d.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/angular-ui-router/bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/angular-ui-router/release/angular-ui-router.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/angular-ui-router/release/angular-ui-router.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/angular-ui-router/src/common.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/angular-ui-router/src/resolve.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/angular-ui-router/src/state.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/angular-ui-router/src/stateDirectives.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/angular-ui-router/src/stateFilters.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/angular-ui-router/src/templateFactory.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/angular-ui-router/src/urlMatcherFactory.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/angular-ui-router/src/urlRouter.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/angular-ui-router/src/view.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/angular-ui-router/src/viewDirective.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/angular-ui-router/src/viewScroll.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/angular.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/angular/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/angular/angular-csp.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/angular/angular.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/angular/angular.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/angular/angular.min.js.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/angular/angular.min.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/angular/bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/angular/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/ionic/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/ionic/bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/ionic/css/ionic.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/ionic/css/ionic.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/ionic/fonts/ionicons.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/ionic/fonts/ionicons.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/ionic/fonts/ionicons.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/ionic/fonts/ionicons.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/ionic/js/ionic-angular.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/ionic/js/ionic-angular.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/ionic/js/ionic.bundle.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/ionic/js/ionic.bundle.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/ionic/js/ionic.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/ionic/js/ionic.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/ionic/scss/_action-sheet.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/ionic/scss/_animations.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/ionic/scss/_backdrop.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/ionic/scss/_badge.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/ionic/scss/_bar.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/ionic/scss/_button-bar.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/ionic/scss/_button.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/ionic/scss/_checkbox.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/ionic/scss/_form.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/ionic/scss/_grid.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/ionic/scss/_items.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/ionic/scss/_list.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/ionic/scss/_loaders.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/ionic/scss/_loading.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/ionic/scss/_menu.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/ionic/scss/_mixins.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/ionic/scss/_modal.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/ionic/scss/_platform.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/ionic/scss/_popover.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/ionic/scss/_popup.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/ionic/scss/_progress.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/ionic/scss/_radio.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/ionic/scss/_range.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/ionic/scss/_refresher.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/ionic/scss/_reset.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/ionic/scss/_scaffolding.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/ionic/scss/_select.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/ionic/scss/_slide-box.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/ionic/scss/_spinner.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/ionic/scss/_split-pane.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/ionic/scss/_tabs.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/ionic/scss/_toggle.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/ionic/scss/_transitions.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/ionic/scss/_type.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/ionic/scss/_util.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/ionic/scss/_variables.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/ionic/scss/ionic.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/ionic/scss/ionicons/_ionicons-animation.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/ionic/scss/ionicons/_ionicons-font.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/ionic/scss/ionicons/_ionicons-icons.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/ionic/scss/ionicons/_ionicons-variables.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/ionic/scss/ionicons/ionicons.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/script.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/videogular-buffering/Gruntfile.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/videogular-buffering/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/videogular-buffering/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/videogular-buffering/bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/videogular-buffering/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/videogular-buffering/vg-buffering.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/videogular-buffering/vg-buffering.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/videogular-controls/Gruntfile.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/videogular-controls/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/videogular-controls/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/videogular-controls/bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/videogular-controls/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/videogular-controls/vg-controls.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/videogular-controls/vg-controls.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/videogular-overlay-play/Gruntfile.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/videogular-overlay-play/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/videogular-overlay-play/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/videogular-overlay-play/bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/videogular-overlay-play/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/videogular-overlay-play/vg-overlay-play.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/videogular-overlay-play/vg-overlay-play.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/videogular-poster/Gruntfile.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/videogular-poster/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/videogular-poster/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/videogular-poster/bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/videogular-poster/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/videogular-poster/vg-poster.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/videogular-poster/vg-poster.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/videogular-themes-default/Gruntfile.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/videogular-themes-default/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/videogular-themes-default/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/videogular-themes-default/bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/videogular-themes-default/fonts/videogular.dev.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/videogular-themes-default/fonts/videogular.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/videogular-themes-default/fonts/videogular.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/videogular-themes-default/fonts/videogular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/videogular-themes-default/fonts/videogular.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/videogular-themes-default/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/videogular-themes-default/videogular.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/videogular-themes-default/videogular.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/videogular-themes-default/videogular.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/videogular/Gruntfile.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/videogular/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/videogular/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/videogular/bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/videogular/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/videogular/videogular.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/videogular/videogular.min.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/.gradle/2.13/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/platforms/android/.gradle/2.13/taskArtifacts/cache.properties.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/.gradle/2.13/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/platforms/android/.gradle/2.13/taskArtifacts/fileHashes.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/.gradle/2.13/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/platforms/android/.gradle/2.13/taskArtifacts/fileSnapshots.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/.gradle/2.13/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/platforms/android/.gradle/2.13/taskArtifacts/taskArtifacts.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/.gradle/2.13/tasks/_CordovaLib_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" afterPath="$PROJECT_DIR$/platforms/android/.gradle/2.13/tasks/_CordovaLib_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/.gradle/2.13/tasks/_CordovaLib_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" afterPath="$PROJECT_DIR$/platforms/android/.gradle/2.13/tasks/_CordovaLib_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/.gradle/2.13/tasks/_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" afterPath="$PROJECT_DIR$/platforms/android/.gradle/2.13/tasks/_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/.gradle/2.13/tasks/_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.bin" afterPath="$PROJECT_DIR$/platforms/android/.gradle/2.13/tasks/_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/.gradle/2.13/tasks/_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" afterPath="$PROJECT_DIR$/platforms/android/.gradle/2.13/tasks/_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/bundles/debug/classes.jar" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/bundles/debug/classes.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/build/outputs/aar/CordovaLib-debug.aar" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/build/outputs/aar/CordovaLib-debug.aar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/incremental/mergeDebugAssets/merger.xml" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/incremental/mergeDebugAssets/merger.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/incremental/mergeDebugJniLibFolders/merger.xml" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/incremental/mergeDebugJniLibFolders/merger.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/incremental/mergeDebugShaders/merger.xml" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/incremental/mergeDebugShaders/merger.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/incremental/packageDebugResources/merger.xml" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/incremental/packageDebugResources/merger.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/css/style.css" afterPath="$PROJECT_DIR$/platforms/android/assets/www/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/index.html" afterPath="$PROJECT_DIR$/platforms/android/assets/www/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/app.js" afterPath="$PROJECT_DIR$/platforms/android/assets/www/js/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/controllers.js" afterPath="$PROJECT_DIR$/platforms/android/assets/www/js/controllers.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/services.js" afterPath="$PROJECT_DIR$/platforms/android/assets/www/js/services.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/templates/browse.html" afterPath="$PROJECT_DIR$/platforms/android/assets/www/templates/browse.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/templates/moviePlay.html" afterPath="$PROJECT_DIR$/platforms/android/assets/www/templates/moviePlay.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/templates/playlistsMovie.html" afterPath="$PROJECT_DIR$/platforms/android/assets/www/templates/playlistsMovie.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/css/style.css" afterPath="$PROJECT_DIR$/www/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/app.js" afterPath="$PROJECT_DIR$/www/js/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/controllers.js" afterPath="$PROJECT_DIR$/www/js/controllers.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/services.js" afterPath="$PROJECT_DIR$/www/js/services.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/templates/browse.html" afterPath="$PROJECT_DIR$/www/templates/browse.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/templates/moviePlay.html" afterPath="$PROJECT_DIR$/www/templates/moviePlay.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/templates/playlistsMovie.html" afterPath="$PROJECT_DIR$/www/templates/playlistsMovie.html" />
-    </list>
+    <list default="true" id="f89f96a2-0150-4e0f-b3e2-a41de6c3453e" name="Default" comment="" />
     <ignored path="playcenter-app.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -201,31 +21,41 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="services.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="services.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/js/services.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
+            <state relative-caret-position="107">
+              <caret line="163" column="22" selection-start-line="163" selection-start-column="22" selection-end-line="163" selection-end-column="22" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/js/app.js">
+      <file leaf-file-name="playlistsExplora.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/templates/playlistsExplora.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="150" column="21" selection-start-line="150" selection-start-column="21" selection-end-line="150" selection-end-column="21" />
+            <state relative-caret-position="345">
+              <caret line="23" column="62" selection-start-line="23" selection-start-column="62" selection-end-line="23" selection-end-column="62" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="menu.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/templates/menu.html">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/www/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="359">
-              <caret line="74" column="15" selection-start-line="74" selection-start-column="15" selection-end-line="74" selection-end-column="15" />
+            <state relative-caret-position="302">
+              <caret line="362" column="18" selection-start-line="362" selection-start-column="18" selection-end-line="362" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="masvistas.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/templates/masvistas.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="19" column="84" selection-start-line="19" selection-start-column="84" selection-end-line="19" selection-end-column="84" />
               <folding />
             </state>
           </provider>
@@ -234,8 +64,8 @@
       <file leaf-file-name="browse.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/templates/browse.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="78" selection-start-line="11" selection-start-column="78" selection-end-line="11" selection-end-column="78" />
+            <state relative-caret-position="305">
+              <caret line="40" column="36" selection-start-line="40" selection-start-column="10" selection-end-line="40" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -244,18 +74,8 @@
       <file leaf-file-name="playlistsMovie.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/templates/playlistsMovie.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="395">
-              <caret line="41" column="51" selection-start-line="41" selection-start-column="51" selection-end-line="41" selection-end-column="51" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/css/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="167">
-              <caret line="343" column="18" selection-start-line="343" selection-start-column="18" selection-end-line="343" selection-end-column="18" />
+            <state relative-caret-position="500">
+              <caret line="48" column="11" selection-start-line="29" selection-start-column="6" selection-end-line="48" selection-end-column="11" />
               <folding />
             </state>
           </provider>
@@ -264,8 +84,28 @@
       <file leaf-file-name="controllers.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/js/controllers.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="320" column="32" selection-start-line="320" selection-start-column="32" selection-end-line="320" selection-end-column="32" />
+            <state relative-caret-position="272">
+              <caret line="241" column="38" selection-start-line="241" selection-start-column="38" selection-end-line="241" selection-end-column="38" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="moviePlay.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/templates/moviePlay.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="21" column="30" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/js/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="265">
+              <caret line="123" column="32" selection-start-line="123" selection-start-column="32" selection-end-line="123" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -285,14 +125,16 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/www/index.html" />
-        <option value="$PROJECT_DIR$/www/templates/moviePlay.html" />
         <option value="$PROJECT_DIR$/www/templates/playlistsMovie.html" />
         <option value="$PROJECT_DIR$/www/templates/menu.html" />
         <option value="$PROJECT_DIR$/www/templates/browse.html" />
-        <option value="$PROJECT_DIR$/www/css/style.css" />
         <option value="$PROJECT_DIR$/www/js/app.js" />
-        <option value="$PROJECT_DIR$/www/js/controllers.js" />
+        <option value="$PROJECT_DIR$/www/templates/masvistas.html" />
+        <option value="$PROJECT_DIR$/www/templates/moviePlay.html" />
         <option value="$PROJECT_DIR$/www/js/services.js" />
+        <option value="$PROJECT_DIR$/www/js/controllers.js" />
+        <option value="$PROJECT_DIR$/www/templates/playlistsExplora.html" />
+        <option value="$PROJECT_DIR$/www/css/style.css" />
       </list>
     </option>
   </component>
@@ -307,9 +149,9 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="800" />
-    <option name="y" value="50" />
-    <option name="width" value="1920" />
+    <option name="x" value="616" />
+    <option name="y" value="70" />
+    <option name="width" value="1729" />
     <option name="height" value="982" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -497,7 +339,7 @@
       <updated>1478092698812</updated>
       <workItem from="1478092701842" duration="15074000" />
       <workItem from="1478176503821" duration="26403000" />
-      <workItem from="1478265860595" duration="24712000" />
+      <workItem from="1478265860595" duration="37501000" />
     </task>
     <task id="LOCAL-00001" summary="Commit tzeev">
       <created>1478188162970</created>
@@ -517,13 +359,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="66189000" />
+    <option name="totallyTimeSpent" value="78978000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="800" y="50" width="1920" height="982" extended-state="0" />
+    <frame x="616" y="70" width="1729" height="982" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15572916" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17293233" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32968238" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -655,26 +497,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/www/js/script.js" />
-    <entry file="file://$PROJECT_DIR$/www/templates/moviePlay.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="89" selection-start-line="16" selection-start-column="89" selection-end-line="16" selection-end-column="89" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="13" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/templates/masvistas.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -687,50 +513,74 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/templates/playlistsMovie.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="395">
-          <caret line="41" column="51" selection-start-line="41" selection-start-column="51" selection-end-line="41" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/templates/browse.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="78" selection-start-line="11" selection-start-column="78" selection-end-line="11" selection-end-column="78" />
+        <state relative-caret-position="305">
+          <caret line="40" column="36" selection-start-line="40" selection-start-column="10" selection-end-line="40" selection-end-column="36" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/controllers.js">
+    <entry file="file://$PROJECT_DIR$/www/templates/moviePlay.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="320" column="32" selection-start-line="320" selection-start-column="32" selection-end-line="320" selection-end-column="32" />
+        <state relative-caret-position="315">
+          <caret line="21" column="30" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/www/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="150" column="21" selection-start-line="150" selection-start-column="21" selection-end-line="150" selection-end-column="21" />
+        <state relative-caret-position="265">
+          <caret line="123" column="32" selection-start-line="123" selection-start-column="32" selection-end-line="123" selection-end-column="32" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/css/style.css">
+    <entry file="file://$PROJECT_DIR$/www/templates/playlistsMovie.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="343" column="18" selection-start-line="343" selection-start-column="18" selection-end-line="343" selection-end-column="18" />
+        <state relative-caret-position="500">
+          <caret line="48" column="11" selection-start-line="29" selection-start-column="6" selection-end-line="48" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/controllers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="241" column="38" selection-start-line="241" selection-start-column="38" selection-end-line="241" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/templates/masvistas.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="84" selection-start-line="19" selection-start-column="84" selection-end-line="19" selection-end-column="84" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/www/js/services.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
+        <state relative-caret-position="107">
+          <caret line="163" column="22" selection-start-line="163" selection-start-column="22" selection-end-line="163" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/templates/playlistsExplora.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="62" selection-start-line="23" selection-start-column="62" selection-end-line="23" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="302">
+          <caret line="362" column="18" selection-start-line="362" selection-start-column="18" selection-end-line="362" selection-end-column="18" />
           <folding />
         </state>
       </provider>

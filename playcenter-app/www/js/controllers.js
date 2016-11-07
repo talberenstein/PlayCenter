@@ -52,25 +52,6 @@ angular.module('starter.controllers', [])
         };
     })
 
-    .controller('PlaylistCtrl2', function ($scope, $stateParams, $window) {
-        console.log($stateParams);
-        $scope.id = $stateParams.id;
-        $scope.descripcion = $stateParams.playlistDescripcion;
-        console.log($scope.descripcion);
-        console.log($scope.id);
-        $scope.url = ("http://172.16.10.3/playcenter/media/" + $scope.id + "_trailer.mp4");
-        console.log($scope.url);
-
-        $scope.count = 0;
-        $scope.myFunc = function() {
-            alert("prueba1");
-            $scope.count++;
-            console.log($scope.count);
-
-            url.location.href ='#/app/playlistsMovie/playMovie/' + $scope.titulo;
-        };
-
-    })
 
     .controller('PlayMovie', ['movies', '$scope', '$stateParams', function (movies, $scope, $stateParams) {
         //console.log($stateParams.playlistTitulo);
@@ -85,7 +66,7 @@ angular.module('starter.controllers', [])
                 $scope.titulo = $scope.pelicula[0].titulo;
                 $scope.url = encodeURI($scope.pelicula[0].url_movie);
                 $scope.cover = ($scope.pelicula[0].url_cover);
-                $scope.cover_1280 = $scope.cover + "1280.jpg";
+                $scope.cover_1280 = $scope.cover + "_1280.jpg";
             }, function(err){
                 console.log(err);
             })
@@ -250,6 +231,38 @@ angular.module('starter.controllers', [])
         $scope.init();
     }])
 
+    .controller('servicioExploraCtrl', ['categorias','$scope', '$log', '$http', function(categorias, $scope){
+        $scope.init = function(){
+            $scope.type = "Explora";
+            $scope.getAll();
+        }
+        $scope.getAll = function(){
+            categorias.getAllCategorias().then(function(res){
+                $scope.categorias = categorias.lista;
+                console.log($scope.categorias[0].id);
+            }, function(err){
+                console.log(err);
+            })
+        };
+        $scope.init();
+    }])
+
+
+    .controller('servicioMasvistoCtrl', ['masvistos','$scope', '$log', '$http', function(masvistos, $scope){
+        $scope.init = function(){
+            $scope.type = "Masvistos";
+            $scope.getAll();
+        }
+        $scope.getAll = function(){
+            masvistos.getAllMasvistos().then(function(res){
+                $scope.peliculas = masvistos.lista;
+                console.log($scope.peliculas[0].id);
+            }, function(err){
+                console.log(err);
+            })
+        };
+        $scope.init();
+    }])
 
     .controller('servicioMovieCtrl', ['movies','$scope', '$log', '$http', function(movies, $scope){
         $scope.init = function(){
@@ -354,89 +367,14 @@ angular.module('starter.controllers', [])
 
     })
 
-    .controller('servicioDocCtrl2', function ($scope, $http) {
-        $http.get("http://172.16.10.3/playcenter/mediacenter/classes/media.php?op=documentales"
-            , {cache: true})
-            .then(function (response) {
-                $scope.peliculas = {};
-                $scope.peliculas = response.data;
-                console.log(response.data[0].titulo);
-            });
 
 
-    })
-
-    .controller('servicioShortCtrl2', function ($scope, $http) {
-        $http.get("http://172.16.10.3/playcenter/mediacenter/classes/media.php?op=cortos"
-            , {cache: true})
-            .then(function (response) {
-                $scope.peliculas = {};
-                $scope.peliculas = response.data;
-                console.log(response.data[0].titulo);
-            });
-
-
-    })
-
-
-    .controller('servicioExploraCtrl', function ($scope, $http) {
-        $http.get("http://172.16.10.3/playcenter/mediacenter/classes/media.php?op=libros"
-            , {cache: true})
-            .then(function (response) {
-                $scope.books = {};
-                $scope.books = response.data;
-                console.log(response.data[0].titulo);
-            });
-
-
-    })
-
-
-
-    .controller('servicioKidCtrl2', function ($scope, $http) {
-        $http.get("http://172.16.10.3/playcenter/mediacenter/classes/media.php?op=kids"
-            , {cache: true})
-            .then(function (response) {
-                $scope.peliculas = {};
-                $scope.peliculas = response.data;
-                console.log(response.data[0].titulo);
-            });
-
-
-    })
-
-   /* .controller('servicioRatingCtrol', function($scope, $http){
-      $http.get("URL_RESCATE_RATING"
-      , {cache: true})
-          .then(function(response){
-              $scope.rating = {};
-              $scope.rating = response.data;
-              console.log (response.data[0].rating_id)
-          })
-    })*/
 
 
 
 
     .controller('DashCtrl', function(){})
 
-
-
-
-
-
-
-    .controller('PlayMovie2', function ($scope, $stateParams) {
-        //console.log($stateParams.playlistTitulo);
-        $scope.id = $stateParams.id;
-
-        //$scope.descripcion = $stateParams.playlistDescripcion;
-        //console.log($scope.descripcion);
-        console.log($scope.titulo);
-        $scope.url = encodeURI("http://172.16.10.3/playcenter/media/" + $scope.movie + ".mp4");
-        console.log($scope.url);
-
-    })
 
 
 

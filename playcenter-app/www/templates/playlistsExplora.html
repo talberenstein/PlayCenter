@@ -5,6 +5,29 @@
 
 
 
+            <ul ng-repeat="categoria in categorias" ng-if="$even">
+                <div class="film_ini">
+                    <a href="#/app/playlists{{type}}/{{categorias[$index].id}}">
+                        <img ng-src="{{categorias[$index].url_cover}}"
+                             border=0 alt="" width="100%" height="auto"></a>
+                </div>
+                <div class="explora_tit_ini">
+                    <a2><b>{{categorias[$index].titulo}}</b></a2>
+                </div>
+
+                <div class="film_fin">
+                    <a href="#/app/playlists{{type}}/{{categorias[$index+1].id}}">
+                        <img ng-src="{{categorias[$index+1].url_cover}}"
+                             border=0 alt="" width="100%" height="auto"></a>
+                </div>
+                <div class="explora_tit_fin">
+                    <a2><b>{{categorias[$index+1].titulo}}</b></a2>
+                </div>
+
+            </ul>
+
+
+
                 <a2 id="textDescubre"><b>DESCUBRE</b></a2>
                 <a2 id="textEstrenos"><b>ESTRENOS</b></a2>
                 <a2 id="textNiños"><b>NIÑOS</b></a2>
@@ -20,7 +43,7 @@
 
                 <div id="exploraDescubre">
                     <a href="#/app/playlistsMovie">
-                        <img id="descubre"
+                        <img ng-src="../img/explora-descubre.gif"
                              width="100%"></a>
                 </div>
 

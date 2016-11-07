@@ -343,7 +343,28 @@ a2{
 
 /* Menú Explora */
 
+.explora_tit_ini{
+    width: 35%;
+    height: auto;
+    text-align: left;
+    margin-left: 17%;
+    margin-right: 3%;
+    position: absolute;
+    margin-top: 27%;
+    line-height: 10pt;
+    font-size: 12pt;
+}
 
+.explora_tit_fin{
+    width: 35%;
+    height: auto;
+    text-align: left;
+    margin-left: 53%;
+    margin-top: -40%;
+    line-height: 10pt;
+    display: inline-block;
+
+}
 
 #exploraDiv{
       height: 880px;
@@ -358,40 +379,38 @@ a2{
 }
 
 #descubre{
-    content: url("../img/explora-descubre.gif");
     float: left;
 }
 #estrenos{
-    content: url("../img/explora-estrenos.gif");
+
     float: left;
 }
 #niños{
-     content: url("../img/explora-ninos.gif");
+
     float: left;
     margin-top: 15%;
  }
 #chile{
-    content: url("../img/explora-chile-independiente.gif");
+
     float: left;
     margin-top: 15%;
 }
 #premiados{
-    content: url("../img/explora-premiados.gif");
+
     float: left;
     margin-top: 15%;
 }
 #reir{
-    content: url("../img/explora-reir.gif");
+
     float: left;
     margin-top: 15%;
 }
 #reflexiona{
-    content: url("../img/explora-reflexiona.gif");
+
     float: left;
     margin-top: 15%;
 }
 #emocionate{
-    content: url("../img/explora-emocionate.gif");
     float: left;
     margin-top: 15%;
 }
@@ -757,6 +776,7 @@ a5{
 .masvistas_rating{
     margin-top: 5%;
     margin-left: -58%;
+    height: 50px;
 }
 
 .box1, .box2, .box3 {
@@ -769,7 +789,7 @@ a5{
     margin-top: 1%;
 }
 .titulo_slide{
-    margin-left: -50%;
+    margin-left: -40%;
 }
 
 .desc_slide{

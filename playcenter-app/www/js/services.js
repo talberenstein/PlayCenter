@@ -1,6 +1,176 @@
 angular.module('starter.services', [])
 
-    
+    .service('masvistos', function ($log, $q, $http, $rootScope) {
+        var masvistos = this;
+        masvistos.lista = {};
+
+        masvistos.getAllMasvistos = function() {
+            var defer = $q.defer();
+            console.log("getAllMasvistos");
+            $http.get("http://172.16.10.3/playcenter/mediacenter/classes/media.php?op=peliculasold"
+                , {cache: true})
+                .then(function (response) {
+                    masvistos.lista = [
+                        {
+                            id: "4",
+                            ext: "mp4",
+                            titulo: "House M.D.",
+                            url_movie: "http://172.16.10.3/playcenter/media/DrH_T01x01.mp4",
+                            url_cover: "http://172.16.10.3/playcenter/covers/DrH_T01",
+                            url_trailer: "http://172.16.10.3/playcenter/media/DrH_T01x01_trailer.mp4",
+                            star_rating: 2,
+                            descripcion: "House M. D. es una serie de televisión estadounidense estrenada en el año 2004 por la cadena FOX y finalizada en 2012."
+                        },
+                        {
+                            id:"3",
+                            ext: "mp4",
+                            titulo: "Batman The Dark Knight Rises",
+                            url_movie: "http://172.16.10.3/playcenter/media/Batman The Dark Knight Rises.mp4",
+                            url_cover: "http://172.16.10.3/playcenter/covers/Batman The Dark Knight Rises",
+                            url_trailer: "http://172.16.10.3/playcenter/media/Batman The Dark Knight Rises_trailer.mp4",
+                            star_rating: 5,
+                            descripcion: "Director: Christopher Nolan Año: 2012 Duracion: 165min                                                                       Hace ocho años que Batman desapareció, dejando de ser un héroe para convertirse en un fugitivo. Al asumir la culpa por la muerte del fiscal del distrito Harvey Dent, el Caballero Oscuro decidió sacrificarlo todo por lo que consideraba, al igual que el Comisario Gordon, un bien mayor. La mentira funciona durante un tiempo, ya que la actividad criminal de la ciudad de Gotham se ve aplacada gracias a la dura Ley Dent. Pero todo cambia con la llegada de una astuta gata ladrona que pretende llevar a cabo un misterioso plan. Sin embargo, mucho más peligrosa es la aparición en escena de Bane, un terrorista enmascarado cuyos despiadados planes obligan a Bruce a regresar de su voluntario exilio."
+                        },
+                        {
+                            id: "5",
+                            ext: "mp4",
+                            titulo: "SinFiltro",
+                            url_movie: "http://172.16.10.3/playcenter/media/SinFiltro.mp4",
+                            url_cover: "http://172.16.10.3/playcenter/covers/SinFiltro",
+                            url_trailer: "http://172.16.10.3/playcenter/media/SinFiltro_trailer.mp4",
+                            star_rating: 2,
+                            descripcion: "Duración: 100 minuntos\n2016\nDirección: Nicolás López\n\nPía, es una agobiada mujer moderna de 37 años que vive en el estresado Santiago del 2015. Día a día es pasada a llevar por su jefe, su novio, su hijastro y su mejor amiga, siendo incapaz de hacer algo al respecto. Ella tiene un dolor constante en el pecho que no la deja vivir y un día, luego de sentir mucho dolor, decide someterse a un milenario tratamiento de acupuntura oriental impartido por un extraño doctor chino. Este tratamiento, sin que ella lo quiera, soltará todo lo que Pía se guardaba dentro y la llevarán por un viaje de liberación personal. Sin embargo, con el tiempo, se dará cuenta que decir todo lo que piensa, no siempre traerá buenas consecuencias. Teniendo así, que aprender a lidiar con sus emociones y pensamientos."
+                        }
+                    ];
+
+                    //masvistos.lista = (response.data);  // response.data debe mantener formato JSON
+                    console.log(response);
+                    defer.resolve(response);
+                });
+
+            return defer.promise;
+        };
+
+        masvistos.getMasvistoById = function(id) {
+            console.log(id);
+            var defer = $q.defer();
+            console.log("Estoy en getMasvistoById");
+            $http.get("http://172.16.10.3/playcenter/mediacenter/classes/media.php?op=peliculasold" /*+ /id*/
+                , {cache: true})
+                .then(function (response) {
+                    masvistos.lista = [
+                        {
+                            id:"3",
+                            ext: "mp4",
+                            titulo: "Batman The Dark Knight Rises",
+                            url_movie: "http://172.16.10.3/playcenter/media/Batman The Dark Knight Rises.mp4",
+                            url_cover: "http://172.16.10.3/playcenter/covers/Batman The Dark Knight Rises",
+                            url_trailer: "http://172.16.10.3/playcenter/media/Batman The Dark Knight Rises_trailer.mp4",
+                            star_rating: 5,
+                            descripcion: "Director: Christopher Nolan Año: 2012 Duracion: 165min                                                                       Hace ocho años que Batman desapareció, dejando de ser un héroe para convertirse en un fugitivo. Al asumir la culpa por la muerte del fiscal del distrito Harvey Dent, el Caballero Oscuro decidió sacrificarlo todo por lo que consideraba, al igual que el Comisario Gordon, un bien mayor. La mentira funciona durante un tiempo, ya que la actividad criminal de la ciudad de Gotham se ve aplacada gracias a la dura Ley Dent. Pero todo cambia con la llegada de una astuta gata ladrona que pretende llevar a cabo un misterioso plan. Sin embargo, mucho más peligrosa es la aparición en escena de Bane, un terrorista enmascarado cuyos despiadados planes obligan a Bruce a regresar de su voluntario exilio."
+                        }
+                    ];
+
+                    //masvistos.lista = (response.data);  // response.data debe mantener formato JSON
+                    console.log(masvistos.lista);
+                    defer.resolve(response);
+                });
+
+            return defer.promise;
+        };
+        return masvistos; })
+
+
+    .service('categorias', function ($log, $q, $http, $rootScope) {
+        var categorias = this;
+        categorias.lista = {};
+
+        categorias.getAllCategorias = function() {
+            var defer = $q.defer();
+            console.log("getAllCategorias");
+            $http.get("http://172.16.10.3/playcenter/mediacenter/classes/media.php?op=peliculasold"
+                , {cache: true})
+                .then(function (response) {
+                    categorias.lista = [
+                        {
+                            id: "1",
+                            titulo: "DESCUBRE",
+                            url_cover: "../img/explora-descubre.gif"
+                            },
+                        {
+                            id:"2",
+                            titulo: "ESTRENOS",
+                            url_cover: "../img/explora-estrenos.gif"
+
+                        },                        {
+                            id:"3",
+                            titulo: "NIÑOS",
+                            url_cover: "../img/explora-estrenos.gif"
+
+                        },                        {
+                            id:"4",
+                            titulo: "PREMIADOS POR LA CRITICA",
+                            url_cover: "../img/explora-estrenos.gif"
+
+                        },                        {
+                            id:"5",
+                            titulo: "CHILE INDEPENDIENTE",
+                            url_cover: "../img/explora-estrenos.gif"
+
+                        },                        {
+                            id:"6",
+                            titulo: "PARA REIR",
+                            url_cover: "../img/explora-estrenos.gif"
+
+                        },                        {
+                            id:"7",
+                            titulo: "REFLEXIONA",
+                            url_cover: "../img/explora-estrenos.gif"
+
+                        },                        {
+                            id:"8",
+                            titulo: "EMOCIONATE",
+                            url_cover: "../img/explora-estrenos.gif"
+
+                        }
+                    ];
+
+                    //categorias.lista = (response.data);  // response.data debe mantener formato JSON
+                    console.log(response);
+                    defer.resolve(response);
+                });
+
+            return defer.promise;
+        };
+
+        categorias.getCategoriaById = function(id) {
+            console.log(id);
+            var defer = $q.defer();
+            console.log("Estoy en getCategoriaById");
+            $http.get("http://172.16.10.3/playcenter/mediacenter/classes/media.php?op=peliculasold" /*+ /id*/
+                , {cache: true})
+                .then(function (response) {
+                    categorias.lista = [
+                        {
+                            id:"3",
+                            ext: "mp4",
+                            titulo: "Batman The Dark Knight Rises",
+                            url_movie: "http://172.16.10.3/playcenter/media/Batman The Dark Knight Rises.mp4",
+                            url_cover: "http://172.16.10.3/playcenter/covers/Batman The Dark Knight Rises",
+                            url_trailer: "http://172.16.10.3/playcenter/media/Batman The Dark Knight Rises_trailer.mp4",
+                            star_rating: 5,
+                            descripcion: "Director: Christopher Nolan Año: 2012 Duracion: 165min                                                                       Hace ocho años que Batman desapareció, dejando de ser un héroe para convertirse en un fugitivo. Al asumir la culpa por la muerte del fiscal del distrito Harvey Dent, el Caballero Oscuro decidió sacrificarlo todo por lo que consideraba, al igual que el Comisario Gordon, un bien mayor. La mentira funciona durante un tiempo, ya que la actividad criminal de la ciudad de Gotham se ve aplacada gracias a la dura Ley Dent. Pero todo cambia con la llegada de una astuta gata ladrona que pretende llevar a cabo un misterioso plan. Sin embargo, mucho más peligrosa es la aparición en escena de Bane, un terrorista enmascarado cuyos despiadados planes obligan a Bruce a regresar de su voluntario exilio."
+                        }
+                    ];
+
+                    //categorias.lista = (response.data);  // response.data debe mantener formato JSON
+                    console.log(categorias.lista);
+                    defer.resolve(response);
+                });
+
+            return defer.promise;
+        };
+        return categorias; })
 
 .service('movies', function ($log, $q, $http, $rootScope) {
     var movies = this;
