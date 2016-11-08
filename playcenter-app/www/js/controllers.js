@@ -74,6 +74,45 @@ angular.module('starter.controllers', [])
         $scope.init();
     }])
 
+    .controller('playlistExploraCtrl', ['categorias', '$scope', '$stateParams', function(categorias, $scope, $stateParams){
+
+        console.log($stateParams);
+        console.log("Estoy en el controlador");
+        $scope.init = function(){
+            console.log("Estoy en init()");
+            $scope.getCategoria();
+        }
+        $scope.getCategoria = function(){
+            console.log("Estoy en getCategoria");
+            $scope.id = $stateParams.id;
+            console.log($scope.id);
+            categorias.getCategoriaById($scope.id).then(function(res){
+                $scope.peliculas = categorias.lista;
+                $scope.titulo = $scope.peliculas[0].titulo;
+                $scope.descripcion = $scope.peliculas[0].descripcion_short;
+                $scope.cover = ($scope.peliculas[0].url_cover);
+                $scope.cover_1280 = $scope.cover + "_1280.jpg";
+                console.log($scope.cover_1280);
+                console.log($scope.cover);
+                $scope.stars = $scope.peliculas[0].star_rating;
+                console.log($scope.stars);
+                $scope.url = encodeURI($scope.peliculas[0].url_trailer);
+                console.log($scope.url);
+            }, function(err){
+                console.log(err);
+            })
+        };
+
+        $scope.count = 2;
+        $scope.myFunc = function() {
+            $scope.count++;
+            console.log($scope.count);
+
+            document.location.href ='#/app/playlistsMovie/playMovie/' + $scope.id;
+        };
+        $scope.init();
+    }])
+
 
     .controller('playlistMovieCtrl', ['movies', '$scope', '$stateParams', function(movies, $scope, $stateParams){
 
@@ -250,7 +289,7 @@ angular.module('starter.controllers', [])
 
     .controller('servicioMasvistoCtrl', ['masvistos','$scope', '$log', '$http', function(masvistos, $scope){
         $scope.init = function(){
-            $scope.type = "Masvistos";
+
             $scope.getAll();
         }
         $scope.getAll = function(){

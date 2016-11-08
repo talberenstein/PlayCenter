@@ -346,8 +346,8 @@ a2{
 .explora_tit_ini{
     width: 35%;
     height: auto;
-    text-align: left;
-    margin-left: 17%;
+    text-align: center;
+    margin-left: 10%;
     margin-right: 3%;
     position: absolute;
     margin-top: 27%;
@@ -358,11 +358,12 @@ a2{
 .explora_tit_fin{
     width: 35%;
     height: auto;
-    text-align: left;
-    margin-left: 53%;
-    margin-top: -40%;
+    text-align: center;
+    margin-left: 55%;
+    margin-top: -30%;
     line-height: 10pt;
     display: inline-block;
+    float: left;
 
 }
 

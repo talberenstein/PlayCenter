@@ -151,6 +151,16 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
            }
            })*/
 
+          .state('app.singleExplora', {
+            url: '/playlistsExplora/:id',
+            views: {
+              'menuContent': {
+                templateUrl: 'templates/playlistsMovie.html',
+                controller: 'playlistExploraCtrl'
+              }
+            }
+          })
+
 
           .state('app.singleMovie', {
             url: '/playlistsMovie/:id',
