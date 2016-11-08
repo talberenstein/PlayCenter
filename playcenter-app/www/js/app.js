@@ -212,6 +212,36 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
             }
           })
 
+          .state('app.playDoc', {
+            url: '/playlistsMovie/playDoc/:id',
+            views: {
+              'menuContent': {
+                templateUrl: 'templates/Movieplay.html',
+                controller: 'PlayDoc'
+              }
+            }
+          })
+
+          .state('app.playShort', {
+            url: '/playlistsMovie/playShort/:id',
+            views: {
+              'menuContent': {
+                templateUrl: 'templates/Movieplay.html',
+                controller: 'PlayShort'
+              }
+            }
+          })
+
+          .state('app.playKid', {
+            url: '/playlistsMovie/playKid/:id',
+            views: {
+              'menuContent': {
+                templateUrl: 'templates/Movieplay.html',
+                controller: 'PlayKid'
+              }
+            }
+          })
+
 
       // if none of the above states are matched, use this as the fallback
       $urlRouterProvider.otherwise('app/inicio');

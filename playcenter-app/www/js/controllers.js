@@ -52,6 +52,68 @@ angular.module('starter.controllers', [])
         };
     })
 
+    .controller('PlayKid', ['kids', '$scope', '$stateParams', function (kids, $scope, $stateParams) {
+        //console.log($stateParams.playlistTitulo);
+        $scope.init = function(){
+            $scope.getMovie()
+        }
+        $scope.getMovie = function(){
+            $scope.id = $stateParams.id;
+            console.log("id: " +$scope.id);
+            kids.getKidById($scope.id).then(function(res){
+                $scope.pelicula = kids.lista;
+                $scope.titulo = $scope.pelicula[0].titulo;
+                $scope.url = encodeURI($scope.pelicula[0].url_movie);
+                $scope.cover = ($scope.pelicula[0].url_cover);
+                $scope.cover_1280 = $scope.cover + "_1280.jpg";
+            }, function(err){
+                console.log(err);
+            })
+        }
+        $scope.init();
+    }])
+
+    .controller('PlayShort', ['shorts', '$scope', '$stateParams', function (shorts, $scope, $stateParams) {
+        //console.log($stateParams.playlistTitulo);
+        $scope.init = function(){
+            $scope.getMovie()
+        }
+        $scope.getMovie = function(){
+            $scope.id = $stateParams.id;
+            console.log("id: " +$scope.id);
+            shorts.getShortById($scope.id).then(function(res){
+                $scope.pelicula = shorts.lista;
+                $scope.titulo = $scope.pelicula[0].titulo;
+                $scope.url = encodeURI($scope.pelicula[0].url_movie);
+                $scope.cover = ($scope.pelicula[0].url_cover);
+                $scope.cover_1280 = $scope.cover + "_1280.jpg";
+            }, function(err){
+                console.log(err);
+            })
+        }
+        $scope.init();
+    }])
+
+    .controller('PlayDoc', ['documentales', '$scope', '$stateParams', function (documentales, $scope, $stateParams) {
+        //console.log($stateParams.playlistTitulo);
+        $scope.init = function(){
+            $scope.getMovie()
+        }
+        $scope.getMovie = function(){
+            $scope.id = $stateParams.id;
+            console.log("id: " +$scope.id);
+            documentales.getDocumentalById($scope.id).then(function(res){
+                $scope.pelicula = documentales.lista;
+                $scope.titulo = $scope.pelicula[0].titulo;
+                $scope.url = encodeURI($scope.pelicula[0].url_movie);
+                $scope.cover = ($scope.pelicula[0].url_cover);
+                $scope.cover_1280 = $scope.cover + "_1280.jpg";
+            }, function(err){
+                console.log(err);
+            })
+        }
+        $scope.init();
+    }])
 
     .controller('PlayMovie', ['movies', '$scope', '$stateParams', function (movies, $scope, $stateParams) {
         //console.log($stateParams.playlistTitulo);
@@ -78,9 +140,11 @@ angular.module('starter.controllers', [])
 
         console.log($stateParams);
         console.log("Estoy en el controlador");
+
         $scope.init = function(){
             console.log("Estoy en init()");
             $scope.getCategoria();
+            $scope.type = "Movie";
         }
         $scope.getCategoria = function(){
             console.log("Estoy en getCategoria");
@@ -96,7 +160,7 @@ angular.module('starter.controllers', [])
                 console.log($scope.cover);
                 $scope.stars = $scope.peliculas[0].star_rating;
                 console.log($scope.stars);
-                $scope.url = encodeURI($scope.peliculas[0].url_trailer);
+                $scope.url = encodeURI($scope.pelicula[0].url_trailer);
                 console.log($scope.url);
             }, function(err){
                 console.log(err);
