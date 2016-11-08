@@ -250,7 +250,7 @@ a2{
 }
 
 .browse_rating{
-    margin-top: 7%;
+    margin-top: 13%;
     margin-left: -50%;
 }
 
@@ -790,7 +790,8 @@ a5{
     margin-top: 1%;
 }
 .titulo_slide{
-    margin-left: -40%;
+    margin-left: 5%;
+    text-align: left;
 }
 
 .desc_slide{
