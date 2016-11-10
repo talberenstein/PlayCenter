@@ -6,6 +6,7 @@
 // 'starter.controllers' is found in controllers.js
 angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
 
+
     .run(function($ionicPlatform) {
       $ionicPlatform.ready(function() {
         // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
@@ -30,8 +31,9 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
             url: '/app',
             abstract: true,
             templateUrl: 'templates/menu.html',
-            controller: 'AppCtrl'
+            controller: 'servicioMovieCtrl2'
           })
+
 
           .state('app.masvistas', {
             url: '/masvistas',

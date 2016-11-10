@@ -13,10 +13,22 @@
 
         <!-- <video controls="controls" name="Video Name" src="{{videoUrl | trustUrl}}"></video> -->
         <div id="contenedor-video">
-            <video id="example_video_1" controls="video-controls"
+          <video id="example_video_1" controls="video-controls"
                    autoplay width="100%" height="auto"  preload loop poster="{{cover_1280}}"
                 source type="video/mp4" ng-src="{{url | trusted}}">
             </video>
+
+     <!--   <video id="example_video_1" class="video-js vjs-default-skin"
+               controls preload="auto" width="640" height="264"
+               poster="http://video-js.zencoder.com/oceans-clip.png"
+               data-setup='{"example_option":true}'>
+            <source src="{{url}}" type="video/mp4" />
+            <source src="{{url}}" type="video/webm" />
+            <source src="{{url}}" type="video/ogg" />
+            <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
+        </video> -->
+
+
         </div>
 
         <div id="desc_browse">

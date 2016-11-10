@@ -5,7 +5,7 @@
       </ion-nav-back-button>
 
       <ion-nav-buttons side="left">
-        <button class="button button-icon button-clear ion-drag" menu-toggle="left">
+        <button class="button button-icon button-clear ion-drag"  menu-toggle="left">
         </button>
       </ion-nav-buttons>
 
@@ -15,28 +15,51 @@
 
   <ion-side-menu side="left" class="my-side-menu">
     <ion-header-bar class="bar-dark">
-      <h1 class="title">BIENVENIDO</h1>
+
+
+      <div class="item item-input-inset">
+        <label class="item-input-wrapper">
+          <input id="search_menu" ng-click="ShowHide()" ng-keydown="ShowHide2()" ng-model="busqueda" type="text" placeholder="Buscar por título">
+        </label>
+        <span class="button button-big" >
+<i class="icon ion-search"></i>
+</span>
+</span>
+      </div>
+
+
+
     </ion-header-bar>
     <ion-content>
 
-      <div id="menu_list">
+      <div id="menu_list2">
 
-      <ion-list>
+      <ion-list ng-show = "IsVisible">
 
-        <li class="item my-list-item" menu-close><a href="#/app/inicio">
-          <i class="icon ion-biblioteca"></i>
-          <ion-icon name="explora"></ion-icon>
-          <div id="menu_txt">
-          Ingresar
-          </div>
-        </a>
-        </li>
+        <div class="mensaje_menu"><a5>Títulos relacionados: </a5><br><a6 ng-click="Hide()" >Cerrar búsqueda</a6><br><br></div>
+
+        <div ng-show = "IsVisible2" class="busqueda_menu">
+          <ul ng-repeat="pelicula in peliculas | filter:busqueda">
+
+            <div class="menu_search_tit">
+              <a href="#/app/playlists{{type}}/{{pelicula.id}}" ng-click="Hide()" menu-close> <a6><b> · </b>{{pelicula.titulo}}</a6></a>
+            </div>
+            <br>
+
+          </ul>
+        </div>
+
+  <br><br>
+
+      </div>
+
+      <div class="items_menu">
 
         <li class="item my-list-item" menu-close><a href="#/app/masvistas">
-          <i class="icon ion-biblioteca"></i>
+          <i class="icon ion-masvistas"></i>
           <ion-icon name="explora"></ion-icon>
           <div id="menu_txt">
-            Mas Vistas
+            <a6>Más vistas</a6>
           </div>
         </a>
         </li>
@@ -45,7 +68,7 @@
           <i class="icon ion-explora"></i>
           <ion-icon name="explora"></ion-icon>
           <div id="menu_txt">
-          Explora
+          <a6>Explora</a6>
             </div>
         </a>
         </li>
@@ -55,7 +78,7 @@
           <i class="icon ion-film"></i>
           <ion-icon name="film"></ion-icon>
           <div id="menu_txt">
-          Películas
+          <a6>Películas</a6>
             </div>
         </a>
         </li>
@@ -64,7 +87,7 @@
           <i class="icon ion-documentales"></i>
           <ion-icon name="documentales"></ion-icon>
           <div id="menu_txt">
-          Documentales
+          <a6>Documentales</a6>
             </div>
         </a>
         </li>
@@ -73,7 +96,7 @@
           <i class="icon ion-cortos"></i>
           <ion-icon name="cortos"></ion-icon>
           <div id="menu_txt">
-          Cortos
+          <a6>Cortos</a6>
             </div>
         </a>
         </li>
@@ -83,7 +106,7 @@
           <i class="icon ion-kids"></i>
           <ion-icon name="Infantil"></ion-icon>
           <div id="menu_txt">
-          Infantil
+          <a6>Infantil</a6>
             </div>
         </a>
         </li>
@@ -92,15 +115,15 @@
           <i class="icon ion-biblioteca"></i>
           <ion-icon name="biblioteca"></ion-icon>
           <div id="menu_txt">
-          Mi biblioteca
+          <a6>Mi biblioteca</a6>
             </div>
         </a>
         </li>
 
-
+      </div>
       </ion-list>
 
-      </div>
+
     </ion-content>
   </ion-side-menu>
 </ion-side-menus>

@@ -27,7 +27,8 @@
           </table> -->
 
 
-      <ul ng-repeat="pelicula in peliculas" ng-if="$even">
+
+      <ul ng-repeat="pelicula in peliculas | filter:busqueda"  ng-if="$even">
           <div class="film_ini">
               <a href="#/app/playlists{{type}}/{{peliculas[$index].id}}">
                   <img ng-src="{{peliculas[$index].url_cover}}_300.jpg"

@@ -23,7 +23,7 @@
                         <b><a2>{{peliculas[0].titulo}}</a2></b>
                     </div>
                     <div class="desc_slide">
-                        <a4>{{peliculas[0].descripcion}}</a4>
+                        <a4>{{peliculas[0].descripcion | limitTo:40}}</a4>
                     </div>
                     <div class="btn_slide">
                         <a ng-href="#/app/playlistsMovie/playMovie/{{295}}" class="btn"><a2>VER AHORA</a2></a>

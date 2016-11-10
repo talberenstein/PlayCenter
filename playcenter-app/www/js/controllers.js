@@ -30,6 +30,7 @@ angular.module('starter.controllers', [])
             $scope.modal.hide();
         };
 
+
         // Perform the login action when the user submits the login form
         $scope.doLogin = function (loginData) {
             console.log('Doing login', $scope.loginData);
@@ -367,6 +368,38 @@ angular.module('starter.controllers', [])
         $scope.init();
     }])
 
+    .controller('servicioMovieCtrl2', ['movies','$scope', '$log', '$http', function(movies, $scope){
+        $scope.init = function(){
+            $scope.type = "Movie";
+            $scope.getAll();
+        }
+        $scope.getAll = function(){
+            movies.getAllMovies().then(function(res){
+                $scope.peliculas = movies.lista;
+                console.log($scope.peliculas[0].id);
+            }, function(err){
+                console.log(err);
+            })
+        };
+        $scope.IsVisible = false;
+        $scope.IsVisible2 = false;
+
+        $scope.ShowHide = function (){
+            $scope.IsVisible = $scope.IsVisible = true;
+        }
+        $scope.ShowHide2 = function(){
+            $scope.IsVisible2 = $scope.IsVisible2 = true;
+        }
+        $scope.Hide = function(){
+            $scope.IsVisible2 = $scope.IsVisible2 = false;
+            $scope.IsVisible = $scope.IsVisible = false;
+        }
+
+
+
+        $scope.init();
+    }])
+
     .controller('servicioMovieCtrl', ['movies','$scope', '$log', '$http', function(movies, $scope){
         $scope.init = function(){
             $scope.type = "Movie";
@@ -380,6 +413,12 @@ angular.module('starter.controllers', [])
                 console.log(err);
             })
         };
+        $scope.IsVisible = false;
+
+        $scope.ShowHide = function (){
+            $scope.IsVisible = $scope.IsVisible = true;
+        }
+
         $scope.init();
     }])
 

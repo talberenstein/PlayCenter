@@ -93,7 +93,7 @@ input::-webkit-input-placeholder{
     font-family:montserrat-light;
 }
 
-.list2{
+.list2 {
     position: static;
     top: 50%;
     left: 70%;
@@ -102,7 +102,7 @@ input::-webkit-input-placeholder{
     margin-left: 8%;
     margin-top: -40px;
     padding: 20px;
-    align-items:left;
+    align-items: left;
     font-family: montserrat-hairline;
     font-size: 16pt;
     text-align: left;
@@ -112,34 +112,54 @@ input::-webkit-input-placeholder{
 /* MENU.HTML */
 
 
+
+#search_menu::-webkit-input-placeholder{
+    font-size: 9pt;
+    color: #000;
+}
+#search_menu::-webkit-color-swatch-wrapper{
+    background-color: transparent;
+}
+
+.ion-masvistas{
+    content: url(../img/masvistas_50.svg);
+    width: 35px;
+}
+
 .ion-film{
     content: url(../img/peliculas_50.svg);
-    width: 50px;
+    width: 35px;
+    margin-top: -2%;
 }
 
 .ion-explora{
     content: url(../img/explora_50.svg);
-    width: 50px;
+    width: 35px;
+    margin-top: -2%;
   }
 
 .ion-cortos{
     content: url(../img/cortos_50.svg);
-    width: 50px;
+    width: 35px;
+    margin-top: -2%;
 }
 
 .ion-documentales{
     content: url(../img/documentales_50.svg);
-    width: 50px;
+    width: 35px;
+    margin-top: -2%;
 }
 
 .ion-biblioteca{
     content: url(../img/biblioteca_50.svg);
-    width: 50px;
+    width: 35px;
+    margin-top: -2%;
 }
 
 .ion-kids{
     content: url(../img/infantil_50.svg);
-    width: 50px;
+    width: 35px;
+    margin-top: -2%;
 }
 
 .my-side-menu{
@@ -187,7 +207,7 @@ a2{
 }
 
 #menu_txt{
-    margin-left: 30%;
+    margin-left: 20%;
     margin-top: -16%;
     text-align: left;
 }
@@ -197,6 +217,30 @@ a2{
     margin-left: 5%;
 }
 
+#menu_list2{
+    margin-top: -5%;
+    margin-left: 5%;
+}
+
+.button-big{
+
+}
+
+
+
+.menu_search_tit{
+    text-align: left;
+}
+
+.mensaje_menu{
+    text-align: left;
+    margin-top: 10%;
+}
+
+.busqueda_menu{
+    margin-top: 8%;
+    margin-left: 5%;
+}
 /* playlistsMovie.html */
 
 
@@ -236,6 +280,10 @@ a2{
     margin-top: 0%;
     line-height: 10pt;
 
+}
+
+.items_menu{
+    margin-top: 10%;
 }
 
 
@@ -583,6 +631,15 @@ a5{
     font-family: montserrat-hairline;
     font-size: 16pt;
 
+}
+
+a6{
+    text-decoration: none;
+    position: relative;
+    color: #ffffff;
+    font-family: montserrat-light;
+    font-size: 10pt;
+    text-align: center;
 }
 
 #parrafo1{
