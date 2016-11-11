@@ -118,8 +118,14 @@ angular.module('starter.controllers', [])
 
     .controller('PlayMovie', ['movies', '$scope', '$stateParams', function (movies, $scope, $stateParams) {
         //console.log($stateParams.playlistTitulo);
+        $scope.$on('$ionicView.beforeEnter', function(){
+            screen.lockOrientation('landscape');
+        });
         $scope.init = function(){
             $scope.getMovie()
+        }
+        $scope.init2 = function(){
+            $scope.videoController()
         }
         $scope.getMovie = function(){
             $scope.id = $stateParams.id;
@@ -127,6 +133,7 @@ angular.module('starter.controllers', [])
             movies.getMovieById($scope.id).then(function(res){
                 $scope.pelicula = movies.lista;
                 $scope.titulo = $scope.pelicula[0].titulo;
+                $scope.id = $scope.pelicula[0].id;
                 $scope.url = encodeURI($scope.pelicula[0].url_movie);
                 $scope.cover = ($scope.pelicula[0].url_cover);
                 $scope.cover_1280 = $scope.cover + "_1280.jpg";
@@ -134,7 +141,39 @@ angular.module('starter.controllers', [])
                 console.log(err);
             })
         }
+        $scope.videoController = function(){
+
+            /**
+             * @property interface
+             * @type {Object}
+             */
+            $scope.interface = {};
+
+            $scope.$on('$videoReady', function videoReady() {
+                $scope.interface.options.setAutoplay(true);
+                $scope.interface.sources.add($scope.url);
+
+            });
+        }
+
+        $scope.funcBack = function(){
+            document.location.href ='#/app/playlistsMovie/' + $scope.id;
+
+        }
+
+        $scope.IsVisibleControls = false;
+        console.log("ASDFADFADSFDA");
+
+        $scope.ShowHide = function (){
+            $scope.IsVisibleControls = $scope.IsVisibleControls = true;
+        }
+
         $scope.init();
+        $scope.init2();
+
+
+
+
     }])
 
     .controller('playlistExploraCtrl', ['categorias', '$scope', '$stateParams', function(categorias, $scope, $stateParams){

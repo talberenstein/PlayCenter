@@ -639,7 +639,7 @@ a6{
     color: #ffffff;
     font-family: montserrat-light;
     font-size: 10pt;
-    text-align: center;
+    text-align: left;
 }
 
 #parrafo1{
@@ -915,3 +915,45 @@ a6{
 }
 
 /* moviePlay.html */
+
+.boton_play{
+    display: flex;
+    margin-left: 45%;
+    margin-top: 11%;
+
+}
+.boton_pause{
+    margin-top: 14%;
+    text-align: left;
+    margin-left: 5%;
+}
+
+.boton_back{
+    display: flex;
+    margin-top: 0%;
+    text-align: left;
+    margin-left: 5%;
+
+}
+
+#video:-webkit-full-screen{
+    width: 50%;
+    height: 90%;
+}
+/*@media print{@page {size: landscape}}*/
+video {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-10%);
+    background: url('../img/loading.gif') no-repeat;
+    background-size: 100%;
+    background-position-x: 50%;
+    background-position-y: 50%;
+    transition: 1s opacity;
+}

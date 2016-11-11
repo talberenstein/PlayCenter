@@ -1,6 +1,6 @@
 <!DOCTYME HTML>
 
-<ion-view view-title="{{titulo}}">
+<ion-view hide-nav-bar="true" view-title="{{titulo}}">
 
 
     <ion-nav-buttons side="right">
@@ -12,11 +12,11 @@
         <br>
 
         <!-- <video controls="controls" name="Video Name" src="{{videoUrl | trustUrl}}"></video> -->
-        <div id="contenedor-video">
+    <!--    <div id="contenedor-video">
           <video id="example_video_1" controls="video-controls"
                    autoplay width="100%" height="auto"  preload loop poster="{{cover_1280}}"
                 source type="video/mp4" ng-src="{{url | trusted}}">
-            </video>
+            </video> -->
 
      <!--   <video id="example_video_1" class="video-js vjs-default-skin"
                controls preload="auto" width="640" height="264"
@@ -28,8 +28,119 @@
             <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
         </video> -->
 
+        <section class="ng-video-container" >
 
-        </div>
+            <!-- Base Directive -->
+            <section id="video" ng-video ng-model="interface">
+                <section vi-controls class="controls">
+                    <div class="boton_back">
+                        <span ng-click="funcBack()" title="Back" class="glyphicon glyphicon-arrow-left"><br><a6 style="margin-left: 10%; text-align: left">{{titulo}}</a6></span>
+                    </div>
+                    <div class="boton_play">
+                        <span ng-click="interface.controls.play()" title="Play" class="glyphicon glyphicon-play"></span>
+                    </div>
+                    <div class="boton_pause">
+                        <span ng-click="interface.controls.pause()" title="Pause" class="glyphicon glyphicon-pause"></span>
+                    </div>
+
+
+
+                </section>
+
+
+
+               <!-- Full Screen Directive -->
+                <!--<section class="full-screen">-->
+                <!--<span title="Full Screen" vi-full-screen-toggle class="glyphicon glyphicon-fullscreen"></span>-->
+                <!--</section>-->
+
+                <!--<!-- Feedback Directive -->-->
+                <!--<section vi-feedback class="feedback">-->
+
+                <!--<span class="buffering" ng-show="buffering">Buffering...</span>-->
+
+                <!--<section class="loading" ng-show="loading">-->
+                <!--Loading...-->
+                <!--</section>-->
+
+                <!--<!-- Volume Directive -->-->
+                <!--<section vi-volume class="volume">-->
+
+                <!--<div class="scale">-->
+                <!--<div class="bar" style="width: {{volume * 100}}%"></div>-->
+                <!--</div>-->
+
+                <!--<span vi-volume-decrease title="Decrease Volume" class="decrease glyphicon glyphicon-minus"></span>-->
+                <!--<span vi-volume-increase title="Increase Volume" class="increase glyphicon glyphicon-plus"></span>-->
+
+                <!--</section>-->
+
+                <!--<!-- Duration Directive -->-->
+                <!--<section class="duration">-->
+                <!--{{currentTime | number: 2}}s of {{duration | number: 2}}s-->
+                <!--[{{percentagePlayed | number: 0}}%]-->
+                <!--</section>-->
+
+                <!--<section class="title">ngVideo</section>-->
+
+                <!--<!-- Timeline Directive -->-->
+                <!--<section class="timeline">-->
+                <!--<input vi-timeline />-->
+                <!--</section>-->
+
+                <!--<!-- Buffer Directive -->-->
+                <!--<section vi-buffer class="buffer"></section>-->
+
+                <!--<section class="generic">-->
+                <!--V{{volume}}-->
+                <!--<span vi-messages>M{{messages.length}}</span>-->
+                <!--R{{playbackRate}}-->
+                <!--P{{playing ? 1 : 0}}-->
+                <!--L{{loading ? 1 : 0}}-->
+                <!--B{{buffered}}%-->
+                <!--<a href="https://github.com/Wildhoney/ngVideo" target="_blank">-->
+                <!--GitHub.com/Wildhoney/ngVideo-->
+                <!--</a>-->
+                <!--</section>-->
+
+                <!--</section>-->
+
+                <!--<!-- Playlist Directive -->-->
+                <!--<section vi-playlist class="playlist" ng-show="$parent.playlistOpen">-->
+
+                <!--<ul>-->
+                <!--<li class="title">-->
+                <!--<span class="glyphicon glyphicon-facetime-video"></span> &nbsp;-->
+                <!--Playlist-->
+                <!--<div class="close-playlist"-->
+                <!--title="Close Playlist"-->
+                <!--ng-click="$parent.playlistOpen = !$parent.playlistOpen">-->
+                <!--&times;-->
+                <!--</div>-->
+                <!--</li>-->
+                <!--<li vi-playlist-video ng-repeat="video in videos" ng-model="video">-->
+
+                <!--<span vi-meta ng-model="video" class="meta">-->
+                <!--{{duration | number: 2}}s-->
+                <!--</span>-->
+
+                <!--{{getVideoName(video)}}-->
+
+                <!--</li>-->
+                <!--</ul>-->
+
+                <!--</section>-->
+
+                <!--<span title="Open Playlist"-->
+                <!--ng-show="!playlistOpen"-->
+                <!--ng-click="playlistOpen = !playlistOpen"-->
+                <!--class="open-playlist glyphicon glyphicon-facetime-video">-->
+                <!--</span>-->
+
+            </section>
+
+        </section>
+
 
         <div id="desc_browse">
             <a>{{movie}}</a>
