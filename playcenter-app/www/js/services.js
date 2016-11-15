@@ -38,8 +38,8 @@ angular.module('starter.services', [])
                             url_movie: "http://172.16.10.3/playcenter/media/SinFiltro.mp4",
                             url_cover: "http://172.16.10.3/playcenter/covers/SinFiltro",
                             url_trailer: "http://172.16.10.3/playcenter/media/SinFiltro_trailer.mp4",
-                            star_rating: 3,
-                            descripcion: "Duración: 100 minuntos\n2016\nDirección: Nicolás López\n\nPía, es una agobiada mujer moderna de 37 años que vive en el estresado Santiago del 2015do incapaz de hacer algo al respecto."
+                            star_rating: 2,
+                            descripcion: "Duración: 100 minuntos\n2016\nDirección: Nicolás López\n\nPía, es una agobiada mujer moderna de 37 años que vive en el estresado Santiago del 2015. Día a día es pasada a llevar por su jefe, su novio, su hijastro y su mejor amiga, siendo incapaz de hacer algo al respecto. Ella tiene un dolor constante en el pecho que no la deja vivir y un día, luego de sentir mucho dolor, decide someterse a un milenario tratamiento de acupuntura oriental impartido por un extraño doctor chino. Este tratamiento, sin que ella lo quiera, soltará todo lo que Pía se guardaba dentro y la llevarán por un viaje de liberación personal. Sin embargo, con el tiempo, se dará cuenta que decir todo lo que piensa, no siempre traerá buenas consecuencias. Teniendo así, que aprender a lidiar con sus emociones y pensamientos."
                         }
                     ];
 

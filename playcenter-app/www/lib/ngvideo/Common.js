@@ -144,7 +144,34 @@
 
                             this.pause();
 
+                        },
+
+                        currentTime: function currentTime(){
+                             return $scope.videoElement.currentTime;
+                        },
+
+                        setCurrentTime: function setCurrentTime(val){
+                            $scope.videoElement.currentTime = val;
+                            return $scope.videoElement.currentTime;
+                        },
+
+                        duration: function duration(){
+                            return $scope.videoElement.duration;
+                        },
+
+                        volume: function volume(){
+                            return $scope.videoElement.volume;
+                        },
+
+                        mute: function mute(){
+                            if($scope.videoElement.volume > 0) {
+                                $scope.videoElement.volume = 0;
+                            } else{
+                                $scope.videoElement.volume = 1;
+                            }
+                            return $scope.videoElement.volume;
                         }
+
 
                     };
 

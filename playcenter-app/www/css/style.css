@@ -289,6 +289,21 @@ a2{
 
 /* BROWSE.html */
 
+#example_video_1{
+ margin-top: 5%;
+}
+
+#contenedor-video{
+    width: 100%;
+    height: auto;
+    display: inline-block;
+
+}
+
+.contenedor-trailer{
+    margin-top: -60%;
+}
+
 
 .tit_browse{
     margin-left: 5%;
@@ -330,8 +345,8 @@ a2{
 
 #sonido{
     text-align: right;
-    margin-right: 10%;
-    margin-top: 1%;
+    margin-right: 5%;
+    margin-top: 65%;
     height: 0px;
 }
 
@@ -792,6 +807,7 @@ a6{
 }
 /* MASVISTAS.HTML */
 
+
 #stars_5{
     content: url("../img/estrellas/5 estrellas.svg");
     height: auto;
@@ -832,21 +848,41 @@ a6{
     height: 20px;
 }
 .masvistas_rating{
-    margin-top: 5%;
+    margin-top: 1%;
     margin-left: -58%;
     height: 50px;
 }
 
-.box1, .box2, .box3 {
-    height: 210px;
-    width: 350px;
+
+.rel_1, .rel_2, .rel_3, .rel_4{
+    display: inline-block;
+    margin-left: 5%;
+    margin-top: 10%;
+    border: 2px solid white;
+    height: 90px;
+    width: 70px;
+}
+
+.contenedor_rel{
+    text-align: left;
+    margin-left: -3%;
+}
+
+.masvisto_transp{
+    position: absolute;
+    background-color: black;
+    opacity: 0.5;
+    width: 90px;
+    height: 30px;
 }
 
 #slider{
     margin-left: 0.5%;
     margin-top: 1%;
+    position: absolute;
 }
 .titulo_slide{
+    margin-top: 5%;
     margin-left: 5%;
     text-align: left;
 }
@@ -860,8 +896,8 @@ a6{
 }
 
 .btn_slide{
-    margin-top: 7%;
-    margin-left: -50%;
+    margin-top: -3%;
+    margin-left: 41%;
 }
 
 #titulo_slide2{
@@ -881,6 +917,11 @@ a6{
     margin-left: -56%;
     margin-top: 2%;
 }
+
+.relacionados{
+    margin-left: -60%;
+}
+
 
 /*playlistsLibrary.html*/
 
@@ -917,43 +958,107 @@ a6{
 /* moviePlay.html */
 
 .boton_play{
+    position: absolute;
     display: flex;
-    margin-left: 45%;
-    margin-top: 11%;
+    margin-left: 47%;
+    margin-top: -20%;
 
 }
 .boton_pause{
-    margin-top: 14%;
+    position: absolute;
+    margin-top: -4.5%;
     text-align: left;
     margin-left: 5%;
 }
 
 .boton_back{
+    position: absolute;
     display: flex;
-    margin-top: 0%;
+    margin-top: -35%;
     text-align: left;
     margin-left: 5%;
 
 }
 
-#video:-webkit-full-screen{
-    width: 50%;
-    height: 90%;
-}
 /*@media print{@page {size: landscape}}*/
 video {
-    position: absolute;
-    top: 10%;
+    position: relative;
+    top: 20%;
     left: 50%;
     min-width: 100%;
     min-height: 100%;
-    width: auto;
+    width: 80%;
     height: auto;
     z-index: -100;
-    transform: translateX(-50%) translateY(-10%);
+    transform: translateX(-50%) translateY(8%);
     background: url('../img/loading.gif') no-repeat;
     background-size: 100%;
     background-position-x: 50%;
     background-position-y: 50%;
     transition: 1s opacity;
+}
+
+#defaultBar{
+    position:relative;
+    float: left;
+    width: 600px;
+    height: 16px;
+    padding: 4px;
+    border: 2px solid black;
+    background: yellow;
+}
+
+#progressBar{
+    position: absolute;
+    width: 01px;
+    height: 16px;
+    background: blue;
+}
+
+.fade.ng-hide {
+    transition:0.5s linear all;
+    opacity:0;
+}
+
+.totalBar{
+    position: absolute;
+    height: 10px;
+    width: 620px;
+    background-color: #FFFFFF;
+    margin-left: 5%;
+}
+
+.timeBar{
+    /*width: 1%;*/
+    height: 10px;
+    margin-left: 0%;
+    background-color: #A68A4B;
+}
+
+.box{
+    position: absolute;
+    text-align: center;
+    margin-left: 85%;
+    margin-top: -4%;
+    height: 20px;
+    width: 20px;
+    background-color: #FFFFFF;
+}
+
+.botoncc{
+    position: absolute;
+    margin-top: -4.5%;
+    margin-left: 90%;
+}
+
+.ion-fullscreen{
+    position: absolute;
+    content: url(../img/fullscreen.svg);
+    width: 20px;
+    margin-top: -4%;
+    margin-left: 45%;
+}
+
+.controls_down{
+    margin-top: -3%;
 }

@@ -54,7 +54,8 @@
          * @property forceVideo
          * @type {String}
          */
-        service.forceVideo = '';
+        service
+            .forceVideo = '';
 
         /**
          * @method addSource

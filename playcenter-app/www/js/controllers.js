@@ -58,6 +58,9 @@ angular.module('starter.controllers', [])
         $scope.init = function(){
             $scope.getMovie()
         }
+        $scope.init2 = function(){
+            $scope.videoController();
+        }
         $scope.getMovie = function(){
             $scope.id = $stateParams.id;
             console.log("id: " +$scope.id);
@@ -71,13 +74,93 @@ angular.module('starter.controllers', [])
                 console.log(err);
             })
         }
+        $scope.videoController = function(){
+
+            /**
+             * @property interface
+             * @type {Object}
+             */
+            $scope.interface = {};
+
+            $scope.$on('$videoReady', function videoReady() {
+                $scope.interface.options.setAutoplay(true);
+                $scope.interface.sources.add($scope.url);
+
+                $scope.video = document.getElementById('myMovie');
+                console.log($scope.video);
+
+                $scope.video.addEventListener("timeupdate", function(ev){
+                    document.getElementById("currentTime").innerHTML = "currentTime: " +$scope.hourTransform($scope.interface.controls.currentTime());
+                    document.getElementById("duration").innerHTML = "duration: "+$scope.hourTransform($scope.interface.controls.duration());
+                    document.getElementById("volume").innerHTML = "volume: "+$scope.interface.controls.volume();
+                    $scope.time = (($scope.interface.controls.currentTime())*100)/$scope.interface.controls.duration()+"%";
+                    document.getElementById("timeporc").innerHTML = "Time %: "+$scope.time;
+                }, true);
+
+
+
+
+            });
+        }
+
+        $scope.hourTransform = function (segs){
+            $scope.d = new Date(segs*1000);
+
+            $scope.hora = ($scope.d.getHours() == 0)?23:$scope.d.getHours()-21;
+            $scope.hora = ($scope.hora<9)?"0"+$scope.hora:$scope.hora;
+            $scope.minuto = ($scope.d.getMinutes()<9)?"0"+$scope.d.getMinutes():$scope.d.getMinutes();
+            $scope.segundo = ($scope.d.getSeconds()<9)?"0"+$scope.d.getSeconds():$scope.d.getSeconds();
+            return $scope.hora + ":"+ $scope.minuto +":"+$scope.segundo;
+        }
+
+        $scope.check = function(e){
+            //capture the mouse position
+            console.log("Entre al check");
+            $scope.posx = 0;
+            if(!e) $scope.e = window.event;
+            if($scope.e.pageX){
+                $scope.posx = $scope.e.pageX;
+            }
+            else if($scope.e.clientX){
+                $scope.posx = $scope.e.clientX;
+            }
+
+            console.log($scope.posx);
+
+            //document.getElementById('timeBar').style.width = $scope.posx;
+            $scope.position = (($scope.posx-33)*100)/620;
+            $scope.position_porc = $scope.position+"%";
+            console.log($scope.position);
+            console.log($scope.position_porc);
+            $scope.time = $scope.position_porc;
+
+            $scope.interface.controls.setCurrentTime(($scope.interface.controls.duration() * $scope.position)/100);
+
+        }
+
+        $scope.funcBack = function(){
+            document.location.href ='#/app/playlistsMovie/' + $scope.id;
+
+        }
+
+        $scope.IsVisibleControls = false;
+
+        $scope.ShowHide = function (){
+            $scope.IsVisibleControls = !$scope.IsVisibleControls;
+            console.log("SHOWHIDE");
+        }
+
         $scope.init();
+        $scope.init2();
     }])
 
     .controller('PlayShort', ['shorts', '$scope', '$stateParams', function (shorts, $scope, $stateParams) {
         //console.log($stateParams.playlistTitulo);
         $scope.init = function(){
             $scope.getMovie()
+        }
+        $scope.init2 = function(){
+            $scope.videoController();
         }
         $scope.getMovie = function(){
             $scope.id = $stateParams.id;
@@ -92,13 +175,93 @@ angular.module('starter.controllers', [])
                 console.log(err);
             })
         }
+        $scope.videoController = function(){
+
+            /**
+             * @property interface
+             * @type {Object}
+             */
+            $scope.interface = {};
+
+            $scope.$on('$videoReady', function videoReady() {
+                $scope.interface.options.setAutoplay(true);
+                $scope.interface.sources.add($scope.url);
+
+                $scope.video = document.getElementById('myMovie');
+                console.log($scope.video);
+
+                $scope.video.addEventListener("timeupdate", function(ev){
+                    document.getElementById("currentTime").innerHTML = "currentTime: " +$scope.hourTransform($scope.interface.controls.currentTime());
+                    document.getElementById("duration").innerHTML = "duration: "+$scope.hourTransform($scope.interface.controls.duration());
+                    document.getElementById("volume").innerHTML = "volume: "+$scope.interface.controls.volume();
+                    $scope.time = (($scope.interface.controls.currentTime())*100)/$scope.interface.controls.duration()+"%";
+                    document.getElementById("timeporc").innerHTML = "Time %: "+$scope.time;
+                }, true);
+
+
+
+
+            });
+        }
+
+        $scope.hourTransform = function (segs){
+            $scope.d = new Date(segs*1000);
+
+            $scope.hora = ($scope.d.getHours() == 0)?23:$scope.d.getHours()-21;
+            $scope.hora = ($scope.hora<9)?"0"+$scope.hora:$scope.hora;
+            $scope.minuto = ($scope.d.getMinutes()<9)?"0"+$scope.d.getMinutes():$scope.d.getMinutes();
+            $scope.segundo = ($scope.d.getSeconds()<9)?"0"+$scope.d.getSeconds():$scope.d.getSeconds();
+            return $scope.hora + ":"+ $scope.minuto +":"+$scope.segundo;
+        }
+
+        $scope.check = function(e){
+            //capture the mouse position
+            console.log("Entre al check");
+            $scope.posx = 0;
+            if(!e) $scope.e = window.event;
+            if($scope.e.pageX){
+                $scope.posx = $scope.e.pageX;
+            }
+            else if($scope.e.clientX){
+                $scope.posx = $scope.e.clientX;
+            }
+
+            console.log($scope.posx);
+
+            //document.getElementById('timeBar').style.width = $scope.posx;
+            $scope.position = (($scope.posx-33)*100)/620;
+            $scope.position_porc = $scope.position+"%";
+            console.log($scope.position);
+            console.log($scope.position_porc);
+            $scope.time = $scope.position_porc;
+
+            $scope.interface.controls.setCurrentTime(($scope.interface.controls.duration() * $scope.position)/100);
+
+        }
+
+        $scope.funcBack = function(){
+            document.location.href ='#/app/playlistsMovie/' + $scope.id;
+
+        }
+
+        $scope.IsVisibleControls = false;
+
+        $scope.ShowHide = function (){
+            $scope.IsVisibleControls = !$scope.IsVisibleControls;
+            console.log("SHOWHIDE");
+        }
+
         $scope.init();
+        $scope.init2();
     }])
 
     .controller('PlayDoc', ['documentales', '$scope', '$stateParams', function (documentales, $scope, $stateParams) {
         //console.log($stateParams.playlistTitulo);
         $scope.init = function(){
             $scope.getMovie()
+        }
+        $scope.init2 = function(){
+            $scope.videoController()
         }
         $scope.getMovie = function(){
             $scope.id = $stateParams.id;
@@ -113,7 +276,85 @@ angular.module('starter.controllers', [])
                 console.log(err);
             })
         }
+
+        $scope.videoController = function(){
+
+            /**
+             * @property interface
+             * @type {Object}
+             */
+            $scope.interface = {};
+
+            $scope.$on('$videoReady', function videoReady() {
+                $scope.interface.options.setAutoplay(true);
+                $scope.interface.sources.add($scope.url);
+
+                $scope.video = document.getElementById('myMovie');
+                console.log($scope.video);
+
+                $scope.video.addEventListener("timeupdate", function(ev){
+                    document.getElementById("currentTime").innerHTML = "currentTime: " +$scope.hourTransform($scope.interface.controls.currentTime());
+                    document.getElementById("duration").innerHTML = "duration: "+$scope.hourTransform($scope.interface.controls.duration());
+                    document.getElementById("volume").innerHTML = "volume: "+$scope.interface.controls.volume();
+                    $scope.time = (($scope.interface.controls.currentTime())*100)/$scope.interface.controls.duration()+"%";
+                    document.getElementById("timeporc").innerHTML = "Time %: "+$scope.time;
+                }, true);
+
+
+
+
+            });
+        }
+
+        $scope.hourTransform = function (segs){
+            $scope.d = new Date(segs*1000);
+
+            $scope.hora = ($scope.d.getHours() == 0)?23:$scope.d.getHours()-21;
+            $scope.hora = ($scope.hora<9)?"0"+$scope.hora:$scope.hora;
+            $scope.minuto = ($scope.d.getMinutes()<9)?"0"+$scope.d.getMinutes():$scope.d.getMinutes();
+            $scope.segundo = ($scope.d.getSeconds()<9)?"0"+$scope.d.getSeconds():$scope.d.getSeconds();
+            return $scope.hora + ":"+ $scope.minuto +":"+$scope.segundo;
+        }
+
+        $scope.check = function(e){
+            //capture the mouse position
+            console.log("Entre al check");
+            $scope.posx = 0;
+            if(!e) $scope.e = window.event;
+            if($scope.e.pageX){
+                $scope.posx = $scope.e.pageX;
+            }
+            else if($scope.e.clientX){
+                $scope.posx = $scope.e.clientX;
+            }
+
+            console.log($scope.posx);
+
+            //document.getElementById('timeBar').style.width = $scope.posx;
+            $scope.position = (($scope.posx-33)*100)/620;
+            $scope.position_porc = $scope.position+"%";
+            console.log($scope.position);
+            console.log($scope.position_porc);
+            $scope.time = $scope.position_porc;
+
+            $scope.interface.controls.setCurrentTime(($scope.interface.controls.duration() * $scope.position)/100);
+
+        }
+
+        $scope.funcBack = function(){
+            document.location.href ='#/app/playlistsMovie/' + $scope.id;
+
+        }
+
+        $scope.IsVisibleControls = false;
+
+        $scope.ShowHide = function (){
+            $scope.IsVisibleControls = !$scope.IsVisibleControls;
+            console.log("SHOWHIDE");
+        }
+
         $scope.init();
+        $scope.init2();
     }])
 
     .controller('PlayMovie', ['movies', '$scope', '$stateParams', function (movies, $scope, $stateParams) {
@@ -135,6 +376,7 @@ angular.module('starter.controllers', [])
                 $scope.titulo = $scope.pelicula[0].titulo;
                 $scope.id = $scope.pelicula[0].id;
                 $scope.url = encodeURI($scope.pelicula[0].url_movie);
+                $scope.url_trailer = $scope.pelicula[0].url_trailer;
                 $scope.cover = ($scope.pelicula[0].url_cover);
                 $scope.cover_1280 = $scope.cover + "_1280.jpg";
             }, function(err){
@@ -153,7 +395,56 @@ angular.module('starter.controllers', [])
                 $scope.interface.options.setAutoplay(true);
                 $scope.interface.sources.add($scope.url);
 
+                $scope.video = document.getElementById('myMovie');
+                console.log($scope.video);
+
+                $scope.video.addEventListener("timeupdate", function(ev){
+                    document.getElementById("currentTime").innerHTML = "currentTime: " +$scope.hourTransform($scope.interface.controls.currentTime());
+                    document.getElementById("duration").innerHTML = "duration: "+$scope.hourTransform($scope.interface.controls.duration());
+                    document.getElementById("volume").innerHTML = "volume: "+$scope.interface.controls.volume();
+                    $scope.time = (($scope.interface.controls.currentTime())*100)/$scope.interface.controls.duration()+"%";
+                    document.getElementById("timeporc").innerHTML = "Time %: "+$scope.time;
+                }, true);
+
+
+
+
             });
+        }
+
+        $scope.hourTransform = function (segs){
+            $scope.d = new Date(segs*1000);
+
+            $scope.hora = ($scope.d.getHours() == 0)?23:$scope.d.getHours()-21;
+            $scope.hora = ($scope.hora<9)?"0"+$scope.hora:$scope.hora;
+            $scope.minuto = ($scope.d.getMinutes()<9)?"0"+$scope.d.getMinutes():$scope.d.getMinutes();
+            $scope.segundo = ($scope.d.getSeconds()<9)?"0"+$scope.d.getSeconds():$scope.d.getSeconds();
+            return $scope.hora + ":"+ $scope.minuto +":"+$scope.segundo;
+        }
+
+        $scope.check = function(e){
+            //capture the mouse position
+            console.log("Entre al check");
+            $scope.posx = 0;
+            if(!e) $scope.e = window.event;
+           if($scope.e.pageX){
+               $scope.posx = $scope.e.pageX;
+           }
+           else if($scope.e.clientX){
+               $scope.posx = $scope.e.clientX;
+           }
+
+           console.log($scope.posx);
+
+           //document.getElementById('timeBar').style.width = $scope.posx;
+            $scope.position = (($scope.posx-33)*100)/620;
+            $scope.position_porc = $scope.position+"%";
+            console.log($scope.position);
+            console.log($scope.position_porc);
+            $scope.time = $scope.position_porc;
+
+            $scope.interface.controls.setCurrentTime(($scope.interface.controls.duration() * $scope.position)/100);
+
         }
 
         $scope.funcBack = function(){
@@ -162,15 +453,16 @@ angular.module('starter.controllers', [])
         }
 
         $scope.IsVisibleControls = false;
-        console.log("ASDFADFADSFDA");
 
         $scope.ShowHide = function (){
-            $scope.IsVisibleControls = $scope.IsVisibleControls = true;
+            $scope.IsVisibleControls = !$scope.IsVisibleControls;
+            console.log("SHOWHIDE");
         }
+
+
 
         $scope.init();
         $scope.init2();
-
 
 
 

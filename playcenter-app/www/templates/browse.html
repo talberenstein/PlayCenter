@@ -8,11 +8,13 @@
 
    <!-- <video controls="controls" name="Video Name" src="{{videoUrl | trustUrl}}"></video> -->
     <div id="contenedor-video">
-    <video id="example_video_1" controls="video-controls"
+    <video id="example_video_1"
            autoplay muted width="100%" height="auto"  preload loop poster="{{cover_1280}}"
       source type="video/mp4" ng-src="{{url | trusted}}">
     </video>
     </div>
+
+      <div class="contenedor-trailer">
 
       <div id="sonido"><a4>Toca para activar sonido del Trailer</a4></div>
 
@@ -46,6 +48,8 @@
         <div id="cont"><a4>Continúa disfrutando sin conexión activando el botón off line.</a4></div>
 
         <ion-toggle id="toggle1"> </ion-toggle>
+
+      </div>
 
 
   </ion-content>

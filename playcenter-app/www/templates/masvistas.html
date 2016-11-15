@@ -10,70 +10,106 @@
 
         <ion-content class="backgroundApp" scroll="true">
 
+            <section class="masvisto_transp">
+                <a6>Más vistos</a6>
+            </section>
+
 
 
             <div id="slider">
             <ion-slide-box>
 
                 <ion-slide>
-                    <div class = "box box1">
-                        <img id="masvistas_slide1" width="360px" height="200px" ng-src="{{peliculas[0].url_cover}}_1280.jpg">
+                    <div>
+                        <img id="masvistas_slide1" width="360px" height="300px" ng-src="{{peliculas[0].url_cover}}_1280.jpg">
                     </div>
                     <div class="titulo_slide">
-                        <b><a2>{{peliculas[0].titulo}}</a2></b>
-                    </div>
-                    <div class="desc_slide">
-                        <a4>{{peliculas[0].descripcion | limitTo:40}}</a4>
+                        <b><a2>{{peliculas[0].titulo | limitTo: 10}}</a2></b>
                     </div>
                     <div class="btn_slide">
-                        <a ng-href="#/app/playlistsMovie/playMovie/{{295}}" class="btn"><a2>VER AHORA</a2></a>
+                        <a ng-href="#/app/playlistsMovie/playMovie/{{295}}" class="btn3"><a2>VER AHORA</a2></a>
                     </div>
                     <div class="masvistas_rating">
                         <img id="stars_{{peliculas[0].star_rating}}">
                     </div>
 
+                    <div class="relacionados"><a6>RELACIONADOS</a6></div>
+
+                   <div class="contenedor_rel">
+
+                    <div class="rel_1"></div>
+                    <div class="rel_2"></div>
+                    <div class="rel_3"></div>
+                    <div class="rel_4"></div>
+
+                   </div>
 
                 </ion-slide>
 
                 <ion-slide>
-                    <div class = "box box2">
-                        <img id="masvistas_slide2" width="360px" height="200px" src="{{peliculas[1].url_cover}}_1280.jpg">
+                    <div>
+                        <img id="masvistas_slide2" width="360px" height="300px" src="{{peliculas[1].url_cover}}_1280.jpg">
                     </div>
                     <div class="titulo_slide">
-                       <b> <a2>{{peliculas[1].titulo}}</a2></b>
+                       <b> <a6>{{peliculas[1].titulo | limitTo: 15}}</a6></b>
                     </div>
-                    <div class="desc_slide">
-                        <a4>{{peliculas[1].descripcion}}</a4>
-                    </div>
+
                     <div class="btn_slide">
-                        <a ng-href="#/app/playlistsMovie/playMovie/{{1}}" class="btn"><a2>VER AHORA</a2></a>
+                        <a ng-href="#/app/playlistsMovie/playMovie/{{1}}" class="btn3"><a2>VER AHORA</a2></a>
                     </div>
                     <div class="masvistas_rating">
                         <img id="stars_{{peliculas[1].star_rating}}">
                     </div>
+
+                    <div class="relacionados"><a6>RELACIONADOS</a6></div>
+
+                    <div class="contenedor_rel">
+
+                        <div class="rel_1"></div>
+                        <div class="rel_2"></div>
+                        <div class="rel_3"></div>
+                        <div class="rel_4"></div>
+
+                    </div>
+
                 </ion-slide>
 
                 <ion-slide>
-                    <div class = "box box3">
-                        <img id="masvistas_slide3" width="360px" height="200px" src="{{peliculas[2].url_cover}}_1280.jpg">
+                    <div>
+                        <img id="masvistas_slide3" width="360px" height="300px" src="{{peliculas[2].url_cover}}_1280.jpg">
                     </div>
                     <div class="titulo_slide">
-                        <b><a2>{{peliculas[2].titulo}}</a2></b>
-                    </div>
-                    <div class="desc_slide">
-                        <a4>{{peliculas[2].descripcion}}</a4>
+                        <b><a2>{{peliculas[2].titulo | limitTo: 16}}</a2></b>
                     </div>
                     <div class="btn_slide">
-                        <a ng-href="#/app/playlistsMovie/playMovie/{{31}}" class="btn"><a2>VER AHORA</a2></a>
+                        <a ng-href="#/app/playlistsMovie/playMovie/{{31}}" class="btn3"><a2>VER AHORA</a2></a>
                     </div>
                     <div class="masvistas_rating">
                         <img id="stars_{{peliculas[2].star_rating}}">
                     </div>
+
+                    <div class="relacionados"><a6>RELACIONADOS</a6></div>
+
+                    <div class="contenedor_rel">
+
+                    <div class="rel_1"></div>
+                    <div class="rel_2"></div>
+                    <div class="rel_3"></div>
+                    <div class="rel_4"></div>
+
+                </div>
+
                 </ion-slide>
+
+
+
+
 
             </ion-slide-box>
 
                 </div>
+
+
 
 
 

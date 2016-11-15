@@ -402,6 +402,7 @@ th {
   content: "\e035";
 }
 .glyphicon-volume-off:before {
+  font-size: 20px;
   content: "\e036";
 }
 .glyphicon-volume-down:before {
@@ -508,12 +509,12 @@ th {
 }
 .glyphicon-play:before {
   content: "\e072";
-  font-size:50px;
+  font-size:35px;
   color: #a68a4b;
 }
 .glyphicon-pause:before {
   content: "\e073";
-  font-size:35px;
+  font-size:20px;
   color: #FFFFFF;
 }
 .glyphicon-stop:before {
@@ -850,6 +851,8 @@ th {
 }
 .glyphicon-subtitles:before {
   content: "\e188";
+  font-size:22px;
+  color: #FFFFFF;
 }
 .glyphicon-sound-stereo:before {
   content: "\e189";
